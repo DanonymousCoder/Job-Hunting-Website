@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+}
+
+.container header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+nav .logo {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo h3 {
+    color: #25324B;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul > li > a {
+    text-decoration: none;
+    color: #515B6F;
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.btn {
+    display: flex;
+    gap: 1em;
+}
+
+.btn button {
+    color: #4640DE;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-right: 1px solid #D6DDEB;
+    padding: 12px 24px;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+
+.btn .have-bg {
+    background-color: #4640DE !important;
+    color: #FFFFFF;
+    border: none;
+}
