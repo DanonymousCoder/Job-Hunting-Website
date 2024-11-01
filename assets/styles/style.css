@@ -15,14 +15,17 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F8F8FD;
+    gap: 5em;
 }
 
 .container header {
-    width: 100%;
+    width: 80%;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -87,7 +90,10 @@ nav ul > li > a {
     background: transparent;
     outline: none;
     border-right: 1px solid #D6DDEB;
-    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
     font-family: "Epilogue";
     font-size: 16px;
     font-weight: 700;
@@ -139,6 +145,12 @@ nav ul > li > a {
     color: #515B6F;
 }
 
+.hero .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .bottom .search {
     width: 70%;
     background-color: white;
@@ -151,7 +163,7 @@ nav ul > li > a {
     box-shadow: 0px 14px 22.68px 0px #C0C0C00C;
     box-shadow: 0px 28.84px 46.72px 0px #C0C0C00F;
     box-shadow: 0px 79px 128px 0px #C0C0C017;
-    padding: 16px;
+    padding: 20px;
 }
 
 .bottom .search .key {
@@ -163,13 +175,23 @@ nav ul > li > a {
 .location select {
     border: none;
     border-bottom: 1px solid #D6DDEB;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
+    width: 234px;
 }
 
 .key input::placeholder {
     color: #7C8493;
-    font-weight: 400;
+    font-family: "Epilogue";
     font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.key input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #D6DDEB;
 }
 
 .hero button {
@@ -177,7 +199,6 @@ nav ul > li > a {
     border: none;
     background: transparent;
     outline: none;
-    border-right: 1px solid #D6DDEB;
     padding: 12px 24px;
     font-family: "Epilogue";
     font-size: 16px;
@@ -185,3 +206,88 @@ nav ul > li > a {
     line-height: 26px;
     text-align: center;
 }
+
+.hero .sch,
+.hero .loc {
+    font-size: 30px;
+}
+
+.hero .location {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-select {
+    appearance: none;
+    background-color: transparent; 
+    border: none;
+    border-bottom: 1px solid #ddd; 
+    font-size: 16px;
+    padding-bottom: 1em;
+    color: #25324B; 
+    cursor: pointer;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .custom-select::after {
+    content: "";
+    background-image: url('../images/chevron-down-regular-24.png');
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: #25324B;
+    pointer-events: none;
+  }
+
+  .custom-select:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #D6DDEB;
+  }
+
+  .custom-select option {
+    padding: 10px;
+  }
+
+  .select-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .bottom p {
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #202430;
+  }
+
+  .bottom p span {
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  
+  main {
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    padding-top: 30px;
+  }
+
+  main .help {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
