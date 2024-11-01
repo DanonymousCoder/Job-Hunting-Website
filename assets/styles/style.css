@@ -340,13 +340,13 @@ nav ul > li > a {
     align-items: center;
   }
 
-  .explore .head {
+.head {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-  .explore .head h2 {
+.head h2 {
     font-family: "ClashDisplay-Variable", sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -354,7 +354,7 @@ nav ul > li > a {
     text-align: left;
   }
 
-  .explore .head h2 span {
+.head h2 span {
     font-family: "ClashDisplay-Variable";
     font-size: 48px;
     font-weight: 600;
@@ -363,7 +363,7 @@ nav ul > li > a {
     color: #26A4FF;
   }
 
-  .explore .head p {
+.head p {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -454,8 +454,9 @@ nav ul > li > a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 1em;
+    padding-left: 40px;
  }
 
  .right {
@@ -475,11 +476,90 @@ nav ul > li > a {
     color: #FFFFFF;
  }
 
+ .left p {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+    color: #FFFFFF;
+ }
+
+ .cta .left button {
+    background-color: #FFFFFF;
+    color: #4640DE;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: center;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+ }
+
+ .cta .right {
+    width: 50%;
+ }
+
  .right img {
     position: absolute;
     bottom: -207px;
     object-position: center;
     height: 344px;
-    right: 10px;
+    width: 100%;
+    right: 20px;
     z-index: 100;
+ }
+
+ .featured {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+ }
+
+ .featured .box {
+    width: 274px;
+    border: 1px solid #D6DDEB;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+ }
+
+ .featured .box button {
+    background: transparent;
+    border: 1px solid #4640DE;
+    color: #4640DE;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center;
+    padding: 12px 24px;
+ }
+
+.d1 {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+}
+
+ .d1 p {
+    font-family: "Epilogue";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    color: #25324B;
+ }
+
+ .d1 .loc {
+    display: flex;
+    gap: .4em;
+ }
+
+ .d1 .loc img {
+    height: 5px;
  }
