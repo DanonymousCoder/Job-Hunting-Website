@@ -1,3 +1,5 @@
+@import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F8F8FD;
 }
 
 .container {
@@ -92,8 +95,93 @@ nav ul > li > a {
     text-align: center;
 }
 
-.btn .have-bg {
+.have-bg {
     background-color: #4640DE !important;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     border: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.hero h1 {
+    font-family: "Clash Display Variable", sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 79.2px;
+    text-align: left;
+    color: #25324B;
+}
+
+.hero img {
+    width: 400px;
+}
+
+.hero .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero h1 span {
+    color: #26A4FF;
+}
+
+.hero p {
+    font-family: "Epilogue", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #515B6F;
+}
+
+.bottom .search {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+    box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+    box-shadow: 0px 6.86px 11.12px 0px #C0C0C00A;
+    box-shadow: 0px 14px 22.68px 0px #C0C0C00C;
+    box-shadow: 0px 28.84px 46.72px 0px #C0C0C00F;
+    box-shadow: 0px 79px 128px 0px #C0C0C017;
+    padding: 16px;
+}
+
+.bottom .search .key {
+    display: flex;
+    gap: .5em;
+}
+
+.key input,
+.location select {
+    border: none;
+    border-bottom: 1px solid #D6DDEB;
+    padding-bottom: .5em;
+}
+
+.key input::placeholder {
+    color: #7C8493;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero button {
+    color: #4640DE;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-right: 1px solid #D6DDEB;
+    padding: 12px 24px;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
 }
