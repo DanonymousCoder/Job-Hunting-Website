@@ -517,15 +517,17 @@ nav ul > li > a {
     display: flex;
     flex-direction: column;
     gap: 3em;
+    margin-bottom: 100px;
  }
 
  .featured .box {
-    width: 274px;
+    max-width: 287px;
     border: 1px solid #D6DDEB;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 1em;
+    margin-top: 1.5em;
  }
 
  .featured .box button {
@@ -537,13 +539,20 @@ nav ul > li > a {
     font-weight: 400;
     line-height: 25.6px;
     text-align: center;
-    padding: 12px 24px;
+    padding: 10px 20px;
+ }
+
+ .featured .down {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
  }
 
 .d1 {
     display: flex;
     flex-direction: column;
-    gap: .4em;
+    align-items: flex-start;
+    gap: 2px;
 }
 
  .d1 p {
@@ -557,9 +566,317 @@ nav ul > li > a {
 
  .d1 .loc {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: .4em;
  }
 
  .d1 .loc img {
     height: 5px;
  }
+
+ .d1 .loc p {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+ }
+
+ .featured p.sub {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #7C8493;
+ }
+
+.featured  .d2 {
+    display: flex;
+    gap: .5em;
+ }
+
+ .d2 p {
+    font-family: "Epilogue";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
+    background-color: #EB85331A;
+    border-radius: 80px;
+    padding: 9px 20px;
+ }
+
+ .d2 p:last-child {
+    background-color: #56CDAD1A;
+ }
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+  }
+
+ .boxes .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .featured .box p.mark {
+    background-color: #EB85331A;
+  }
+
+  .featured .box p.des {
+    background-color: #56CDAD1A;
+  }
+
+  .featured .box p.biz {
+    background-color: #4640DE1A;
+  }
+
+  .featured .box p.tech {
+    background-color: #FF65501A;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #F8F8FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+  }
+
+.illustr2 {
+    position: absolute;
+    left: -350px;
+    top: -250px;
+    rotate: calc(360deg);
+}
+
+  .latest {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .latest .column {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .latest .boxes {
+    width: 50%;
+  }
+
+  .latest .box {
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px 44px;
+    gap: 2em;
+    border-radius: 15px;
+  }
+
+  .loc {
+    display: flex;
+  }
+
+  .label {
+    display: flex;
+    gap: .5em;
+    margin-top: 5px;
+  }
+
+  .latest .title {
+    font-family: "Epilogue";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .latest .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+
+  .loc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+  }
+
+  .loc p {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+
+  .loc img {
+    height: 5px;
+  }
+
+  .latest .label p {
+    font-family: "Epilogue";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22.4px;
+    text-align: left;
+    padding: 8px 16px;
+    border-radius: 80px;
+  }
+
+  .latest .label p.full {
+    color: #56CDAD;
+    background-color: #56CDAD1A;
+  }
+
+  .latest .label p.mark {
+    color: #FFB836;
+    border: 1px solid #FFB836;
+    background-color: transparent;
+  }
+
+  .latest .label p.des {
+    color: #4640DE;
+    border: 1px solid #4640DE;
+    background: transparent;
+  }
+
+  .latest hr {
+    border: 1px solid #D6DDEB;
+  }
+
+  .footer {
+    background-color: #202430;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 70px 0;
+  }
+
+  .foot {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .foot .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .foot .abt {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .foot .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+    color: #FFFFFF;
+    font-family: "Red Hat Display";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .foot .abt p {
+    color: #D6DDEB;
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+  }
+
+  .foot .main {
+    color: #FFFFFF;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+  }
+
+  .foot ul li a,
+  .notify p {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #D6DDEB;
+  }
+
+  .foot .notify {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .notify form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .notify input {
+    padding: 17px;
+  }
+
+  .notify input::placeholder {
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    color: #A8ADB7;
+  }
+
+  .notify button {
+    background-color: #4640DE;
+    padding: 12px 24px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
