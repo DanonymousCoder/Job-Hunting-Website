@@ -2,7 +2,10 @@ let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
 let lightTog = document.getElementById("icon");
 
+let ham = document.getElementById("ham");
+
 darkTog.addEventListener("click", darkInit);
+ham.accessKeyLabel("click", navOpen);
 
 function darkInit() {
     cont.classList.toggle("dark");
@@ -16,4 +19,8 @@ function darkInit() {
         lightTog.classList.remove("bx-sun");
         lightTog.classList.add("bx-moon");
     }
+}
+
+function navOpen() {
+    ham.classList.toggle("act");
 }

@@ -998,11 +998,24 @@ a {
     color: inherit;
 }
 
+.desktop-hide {
+  visibility: hidden;
+}
 
 
 @media (max-width: 450px) {
-  nav ul {
+  .desktop-hide {
+    visibility: visible;
+  }
+
+  #ham {
+    visibility: visible;
+    height: 50px;
+  }
+
+  .mobile-hide {
     display: none;
+    visibility: hidden;
   }
 
   .btn {
