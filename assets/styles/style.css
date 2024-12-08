@@ -83,7 +83,13 @@ nav ul > li > a {
 
 .btn {
     display: flex;
-    gap: 1em;
+    gap: .5em;
+}
+
+.btn .first {
+  border: 0;
+  padding: 0;
+  font-size: 25px;
 }
 
 .btn button {
