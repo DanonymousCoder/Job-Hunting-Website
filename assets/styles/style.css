@@ -24,6 +24,10 @@ body {
     gap: 5em;
 }
 
+.dark {
+  background-color: #202430;
+}
+
 .container header {
     width: 80%;
     padding: 20px 0;
@@ -898,6 +902,20 @@ nav ul > li > a {
     padding-top: 30px;
     border-top: 1px solid #FFFFFF;
     opacity: 10%;
+  }
+
+  footer .bottom p {
+    color: #FFFFFF;
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+  }
+
+  footer .bottom .socials {
+     display: flex;
+     gap: .5em;
   }
 
   ul {
