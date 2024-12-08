@@ -24,10 +24,74 @@ body {
     gap: 5em;
 }
 
+.dark .hero h1 {
+  color: #FFFFFF;
+}
+
+/*
+  DARK MODE STARTS
+*/
+
 .dark {
   background-color: #202430;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.dark nav .logo h3 {
+  color: #F8F8FD;
+}
+
+.dark nav ul > li > a {
+  color: #F8F8FD;
+}
+
+.dark .illustr1,
+.illustr2 {
+  background-color: #202430;
+  visibility: hidden;
+}
+
+.dark main {
+  background-color: #202430;
+}
+
+.dark .hero p {
+  color: #FFFFFF;
+}
+
+.dark .help p.head {
+  color: #FFFFFF;
+}
+
+.dark   .help .companies img {
+  opacity: 130%;
+}
+
+.dark .head h2 {
+  color: #FFFFFF;
+}
+
+.dark .explore .box {
+  border: none;
+}
+
+.dark .featured .box{
+  background-color: #FFFFFF;
+  border: 1px solid #D6DDEB;
+}
+
+.dark footer {
+  background-color: #202430;
+}
+
+.dark  footer .bottom .right {
+  color: #FFFFFF !important;
+}
+
+
+/*
+  DARK MODE ENDS
+*/
 
 .container header {
     width: 80%;
@@ -114,10 +178,11 @@ nav ul > li > a {
     text-align: center;
 }
 
-.have-bg {
+.btn .have-bg {
     background-color: #4640DE !important;
     color: #FFFFFF !important;
     border: none;
+    border-right: none;
 }
 
 .hero {
@@ -221,6 +286,11 @@ nav ul > li > a {
     font-weight: 700;
     line-height: 26px;
     text-align: center;
+}
+
+.hero .have-bg {
+  background-color: #4640DE;
+  color: #FFFFFF;
 }
 
 .hero .sch,
