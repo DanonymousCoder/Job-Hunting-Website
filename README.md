@@ -1,2 +1,2 @@
 # Job-Hunting-Website
-### A website to find jobs
+### Great platform for the job seeker that searching for new career heights and passionate about startups.
