@@ -1101,6 +1101,15 @@ a {
     right: 0;
   }
 
+  .boxes .row{
+    overflow-x: hidden;
+    gap: 2em;
+  }
+
+  .featured .head p {
+    visibility: hidden !important;
+  }
+
   .head h2,
   .head h2 span {
     font-size: 28px;
