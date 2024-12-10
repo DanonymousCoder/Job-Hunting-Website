@@ -3,9 +3,11 @@ let darkTog = document.getElementById("dark-mode");
 let lightTog = document.getElementById("icon");
 
 let ham = document.getElementById("ham");
+let link = document.getElementById("link");
+let btn = document.getElementById("butn");
 
 darkTog.addEventListener("click", darkInit);
-ham.accessKeyLabel("click", navOpen);
+ham.addEventListener("click", navOpen);
 
 function darkInit() {
     cont.classList.toggle("dark");
@@ -22,5 +24,6 @@ function darkInit() {
 }
 
 function navOpen() {
-    ham.classList.toggle("act");
+    link.classList.toggle("active");
+    btn.classList.toggle("active");
 }

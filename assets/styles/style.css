@@ -101,6 +101,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden !important;
     gap: 7em;
 }
 
@@ -1010,6 +1011,62 @@ a {
     visibility: visible;
   }
 
+  nav {
+    position: relative;
+  }
+
+  nav ul.active {
+    position: absolute;
+    visibility: visible !important;
+    display: block !important;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    right: 0;
+    top: 60px;
+  }
+
+  .container nav .btn.active {
+    position: absolute;
+    visibility: visible !important;
+    display: block !important;
+    background-color: #FFFFFF;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15em;
+    right: 0;
+    top: 160px;
+  }
+
+  nav .btn.active button {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid #D6DDEB !important;
+    margin-bottom: 10px;
+  }
+
+  nav .btn.active .first {
+    border: 0 !important;
+    width: auto;
+  }
+
+  .active {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
   #ham {
     visibility: visible;
     height: 50px;
@@ -1156,7 +1213,6 @@ a {
   }
 
   .featured .box {
-    max-width:1500px;
     min-width: 300px;
     margin: 10px;
   }
@@ -1220,12 +1276,6 @@ a {
 
   .footer .top {
     flex-wrap: wrap;
-  }
-
-  .footer .top:nth-child(2),
-  .footer .top:nth-child(3),
-  .footer .top:nth-child(4) {
-    padding-top: 50px;
   }
 
   .abt p {
