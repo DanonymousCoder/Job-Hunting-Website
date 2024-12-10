@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
     background-color: #F8F8FD;
 }
 
@@ -1101,13 +1102,47 @@ a {
     right: 0;
   }
 
+  .boxes {
+    width: auto;
+  }
+
+  .row:nth-child(2) {
+    visibility: hidden;
+  }
+
   .boxes .row{
-    overflow-x: hidden;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 2em;
+    padding-left: 130px;
+  }
+
+  .featured{
+    width: 95%;
   }
 
   .featured .head p {
     visibility: hidden !important;
+  }
+
+  .featured .box button {
+    font-size: 16px;
+    width: 91px;
+    height: 34px;
+  }
+
+  .featured .box {
+    max-width:1500px;
+    min-width: 300px;
+  }
+
+  .featured .box:nth-child(1) {
+  }
+  
+
+  .d1 p {
+    font-size: 16px;
   }
 
   .head h2,
