@@ -8,11 +8,9 @@ let btn = document.getElementById("butn");
 
 let signup = document.getElementById("signup");
 let login = document.getElementById("login");
-let home = document.getElementById("homee");
 
 signup.addEventListener("click", signUp);
-login.addEventListener("click", logIn);
-home.addEventListener("click", goHome);
+login.addEventListener("click", logIn);]
 
 darkTog.addEventListener("click", darkInit);
 ham.addEventListener("click", navOpen);
