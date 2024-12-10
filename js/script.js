@@ -6,6 +6,12 @@ let ham = document.getElementById("ham");
 let link = document.getElementById("link");
 let btn = document.getElementById("butn");
 
+let signup = document.getElementById("signup");
+let login = document.getElementById("login");
+
+signup.addEventListener("click", signUp);
+login.addEventListener("click", logIn);
+
 darkTog.addEventListener("click", darkInit);
 ham.addEventListener("click", navOpen);
 
@@ -26,4 +32,12 @@ function darkInit() {
 function navOpen() {
     link.classList.toggle("active");
     btn.classList.toggle("active");
+}
+
+function signUp() {
+    window.location.href = "../pages/signup.html";
+}
+
+function logIn() {
+    window.location.href = "../pages/login.html";
 }
