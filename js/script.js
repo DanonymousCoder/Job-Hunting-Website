@@ -8,9 +8,11 @@ let btn = document.getElementById("butn");
 
 let signup = document.getElementById("signup");
 let login = document.getElementById("login");
+let home = document.getElementById("homee");
 
 signup.addEventListener("click", signUp);
 login.addEventListener("click", logIn);
+home.addEventListener("click", goHome);
 
 darkTog.addEventListener("click", darkInit);
 ham.addEventListener("click", navOpen);
@@ -40,4 +42,8 @@ function signUp() {
 
 function logIn() {
     window.location.href = "../pages/login.html";
+}
+
+function goHome() {
+    window.location.href = "../index.html";
 }
