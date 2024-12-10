@@ -1,5 +1,9 @@
 @import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -55,6 +59,7 @@
     color: #4640DE;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
 
 .user-type p {
@@ -67,11 +72,11 @@
 
 .user-type .on {
     background-color: #E9EBFD;
-    padding: 7px 14px;
+    padding: 10px 20px;
 }
 
 h3 {
-    font-family: "Clash Display Variable";
+    font-family: "ClashDisplay-Variable", sans-serif;
     font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
@@ -84,7 +89,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
+    gap: .5em;
 }
 
 .google p {
@@ -194,6 +200,7 @@ form button {
     font-weight: 600;
     line-height: 24px;
     text-align: center;
+    padding-left: 5px;
 }
 
 .terms {
@@ -201,6 +208,24 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.terms p {
+    font-family: "Epilogue";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #7C8493;
+}
+
+.terms p span {
+    color: #4640DE;
+    font-family: "Epilogue";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
 }
 
 a {
