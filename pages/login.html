@@ -5,14 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 
+        red hat font
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- 
+        Boxicon
+    -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+
+    <!-- 
         CSS
     -->
 
     <link rel="stylesheet" href="../assets/styles/login.css">
 
-    <title>Document</title>
+    <title>Login | JobHuntly</title>
 </head>
 <body>
+
+     
+    <div class="container">
+
+        <div class="left">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="">
+                <p>
+                    JobHuntly
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="user-type">
+                <p class="on">Job Seeker</p>
+                <p>Company</p>
+            </div>
+
+            <h3>Welcome Back, Dude</h3>
+
+            <div class="google">
+                <img src="../assets/images/google.png" alt="">
+                <p>Login with Google</p>
+            </div>
+
+            <div class="mail">
+                <p>Or login with email</p>
+            </div>
+
+            <form action="#">
+
+                <div class="email">
+                    <label for="mail">Email Address</label>
+                    <input type="email" name="" id="" placeholder="Enter your email Address">
+                </div>
+
+                <div class="pswrd">
+                    <label for="pswrd">Password</label>
+                    <input type="password" name="" id="" placeholder="Enter your password">
+                </div>
+
+                <div class="check">
+                    <input type="checkbox">
+                    <label for="remem">Remember me</label>
+                </div>
+
+                <button>Login</button>
+            </form>
+
+            <div class="alt">
+                <p>Don't have an account?<a href="../pages/signup.html">Sign Up</a></p>
+            </div>
+
+        </div>
+
+    </div>
     
 </body>
 </html>
