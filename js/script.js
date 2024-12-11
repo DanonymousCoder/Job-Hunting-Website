@@ -35,13 +35,15 @@ function navOpen() {
 }
 
 function signUp() {
-    window.location.href = "../pages/signup.html";
+    window.location.href = "/Job-Hunting-Website/pages/signup.html";
 }
 
 function logIn() {
-    window.location.href = "../pages/login.html";
+    window.location.href = "/Job-Hunting-Website/pages/signup.html";
 }
 
+/*
 function goHome() {
     window.location.href = "../index.html";
 }
+    */
