@@ -10,7 +10,7 @@ let signup = document.getElementById("signup");
 let login = document.getElementById("login");
 
 signup.addEventListener("click", signUp);
-login.addEventListener("click", logIn);]
+login.addEventListener("click", logIn);
 
 darkTog.addEventListener("click", darkInit);
 ham.addEventListener("click", navOpen);
