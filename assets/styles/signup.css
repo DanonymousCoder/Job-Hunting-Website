@@ -284,3 +284,9 @@ a {
         width: 90%;
     }
 }
+
+@media (max-width: 320px) {
+    .user-type {
+        margin-top: 20px;
+    }
+}
