@@ -35,7 +35,7 @@ function navOpen() {
 }
 
 function signUp() {
-    window.location.href = "/Job-Hunting-Website/pages/signup.html";
+    window.location.href = "../Job-Hunting-Website/pages/signup.html";
 }
 
 function logIn() {
