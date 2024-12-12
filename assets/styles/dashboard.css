@@ -1,0 +1,185 @@
+@import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    width: 15%;
+    height: 100%;
+    background-color: #F8F8FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+nav .logo p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+nav .top .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom: 1px solid #CCCCF5;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.on {
+    color: #4640DE;
+    background-color: #E9EBFD;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav .dash {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5em;
+    padding-left: 30px;
+}
+
+nav .mess {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: .5em;
+}
+
+nav .app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: .5em;
+}
+
+nav .find {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: .5em;
+}
+
+nav .browse {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: .5em;
+}
+
+nav .pub {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: .5em;
+}
+
+nav .top  i {
+    color: #7C8493;
+    font-size: 24px;
+}
+
+nav .top  .on i {
+    color: #4640DE;
+}
+
+nav .top .links p,
+nav .top .setts p {
+    color: #7C8493;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+nav .top .links .on p,
+nav .top .setts .on p {
+    color: #4640DE;
+}
+
+nav .top .setts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+nav .top .settings {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+nav .top .help {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.setts h5 {
+    padding-bottom: 20px;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #202430;
+    opacity: 50%;
+}
+
+nav .bottom {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+nav .bottom .prof {
+    display: flex;
+    gap: .5em;
+}
+
+p#fname {
+    
+}
