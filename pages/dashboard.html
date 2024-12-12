@@ -121,8 +121,57 @@
                 </div>
 
                 <div class="date">
-                    <input type="date" name="date" id="date">
+                    <div class="date-range-display" id="date-range-display">
+                       <div class="txt">
+                            <span id="start-date">July 19</span>
+                            <span class="separator">-</span>
+                            <span id="end-date">July 25</span>
+                       </div>
+
+                        <i class='bx bx-calendar-edit' id="date-edit"></i>
+                      </div>
+
+                      <div class="date-range-form" id="date-range-form">
+                        <label for="start">Start Date:</label>
+                        <input type="date" id="start" />
+                      
+                        <label for="end">End Date:</label>
+                        <input type="date" id="end" />
+                      
+                        <button id="update-date">Update</button>
+                      </div>
                 </div>
+            </div>
+
+            <div class="complex">
+
+                <div class="col1">
+                    <div class="tot-jobs">
+                        <p class="hd">Total Jobs Applied</p>
+                        <p class="num">45</p>
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="interviewed">
+                        <p class="hd">Interviewed</p>
+                        <p class="num">18</p>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col2">
+                    <p class="hd">Jobs Applied Status</p>
+                    <div class="md">
+
+                    </div>
+
+                    <div class="sd">
+                        <a href="#">View All Applications <img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="col3">
+                    <p class="hd">Upcoming Interviews</p>
+                </div>
+
             </div>
         </main>
 
@@ -133,7 +182,7 @@
         JS
     -->
 
-    <script src=""></script>
+    <script src="../js/dashboard.js"></script>
     
 </body>
 </html>
