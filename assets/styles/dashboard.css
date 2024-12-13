@@ -365,6 +365,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 20%;
  }
 
  .tot-jobs {
@@ -417,6 +418,7 @@ input::placeholder{
     gap: 1em;
     border: 1px solid #D6DDEB;
     padding: 10px 20px;
+    width: 35%;
  }
 
  .col2 .md {
@@ -483,4 +485,78 @@ input::placeholder{
  .col2  i {
     font-size: 20px;
     color: #4640DE;
+ }
+
+ .col3 {
+    border: 1px solid #D6DDEB;
+    padding: 10px 20px;
+    width: 35%;
+ }
+
+ .col .day {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .col .day p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+ }
+
+ .col .day span {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+ }
+
+ .arrow {
+    display: flex;
+    gap: .5em;
+ }
+
+ .col3 .ten {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+ }
+
+ .col3 hr {
+    width: 70%;
+    height: 1px;
+ }
+
+ .col3 .elev {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+ }
+
+ .col3 .ten p,
+ .col3 .elev p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    text-align: left;
+    color: #7C8493;
+ }
+
+ .mid {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+ }
+
+ .mid .box {
+    display: flex;
+    gap: .5em;
+ }
+
+ .col3 img {
+    height: 48px;
  }
