@@ -50,6 +50,10 @@ function logIn() {
     window.location.href = "/Job-Hunting-Website/pages/signup.html";
 }
 
+function userDash() {
+    window.location.href = "/Job-Hunting-Website/pages/dashboard.html";
+}
+
 /*
 function goHome() {
     window.location.href = "../index.html";
