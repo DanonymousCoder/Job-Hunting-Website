@@ -1,6 +1,6 @@
 let defDisplay = document.getElementById("date-range-display");
 let updDate = document.getElementById("update-date");
-let form = document.getElementById("signup");
+let form = document.getElementById("signupp");
 
 
 defDisplay.addEventListener("click", showDate);
