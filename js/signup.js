@@ -3,7 +3,10 @@ let form = document.getElementById("signupp");
 document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("signsub");
 
-    submitButton.addEventListener("click", saveDetails);
+    submitButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent form submission
+        saveDetails();
+    });
 
     function saveDetails() {
         const fullName = document.getElementById("fname").value;

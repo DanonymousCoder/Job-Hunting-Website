@@ -9,12 +9,6 @@ let btn = document.getElementById("butn");
 let signup = document.getElementById("signup");
 let login = document.getElementById("login");
 
-let submit = document.getElementById("signsub");
-
-submit.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent form submission
-    userDash();
-});
 
 
 signup.addEventListener("click", signUp);
@@ -48,10 +42,6 @@ function signUp() {
 
 function logIn() {
     window.location.href = "/Job-Hunting-Website/pages/login.html";
-}
-
-function userDash() {
-    window.location.href = "/Job-Hunting-Website/pages/dashboard.html";
 }
 
 /*
