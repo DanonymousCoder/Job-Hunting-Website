@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (fullName && eMail) {
             localStorage.setItem("fullName", fullName);
             localStorage.setItem("eMail", eMail);
-            window.location.href = "../pages/dashboard.html"; // Redirect to dashboard
+            window.location.href = "/Job-Hunting-Website/pages/dashboard.html"; // Redirect to dashboard
         } else {
             alert("Please enter your full name.");
         }

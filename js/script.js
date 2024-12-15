@@ -44,15 +44,15 @@ function navOpen() {
 }
 
 function signUp() {
-    window.location.href = "../pages/signup.html";
+    window.location.href = "/Job-Hunting-Website/pages/signup.html";
 }
 
 function logIn() {
-    window.location.href = "../pages/login.html";
+    window.location.href = "/Job-Hunting-Website/pages/login.html";
 }
 
 function userDash() {
-    window.location.href = "../pages/dashboard.html";
+    window.location.href = "/Job-Hunting-Website/pages/dashboard.html";
 }
 
 /*
