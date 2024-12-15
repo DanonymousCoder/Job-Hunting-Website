@@ -1,13 +1,10 @@
 let defDisplay = document.getElementById("date-range-display");
 let updDate = document.getElementById("update-date");
-let form = document.getElementById("signupp");
-let submiT = document.getElementById("signsub");
 
 
 defDisplay.addEventListener("click", showDate);
 updDate.addEventListener("click", updateDate);
 
-submiT.addEventListener("submit", saveDetails);
 
 function showDate() {
     const form = document.getElementById("date-range-form");
@@ -33,9 +30,19 @@ function updateDate() {
     }
 }
 
-function saveDetails() {
-  const fname = document.getElementById("fname").value;
+document.addEventListener("DOMContentLoaded", () => {
+  const dashName = document.getElementById("fulname");
+  const fullName = localStorage.getItem("fullName");
 
-  let dashName= document.getElementById("fulname");
-  dashName.innerHTML = fname;
-}
+  const maail = document.getElementById("maail");
+  const mail = localStorage.getItem("eMail");
+
+
+
+  if (fullName && mail) {
+      dashName.textContent = fullName;
+      maail.textContent = mail;
+  } else {
+      dashName.textContent = "Guest"; // Fallback if no name is found
+  }
+});
