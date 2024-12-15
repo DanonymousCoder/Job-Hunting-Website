@@ -11,7 +11,6 @@ let login = document.getElementById("login");
 
 let submit = document.getElementById("signsub");
 
-submit.addEventListener("click", userDash);
 submit.addEventListener("click", (event) => {
     event.preventDefault(); // Prevent form submission
     userDash();
