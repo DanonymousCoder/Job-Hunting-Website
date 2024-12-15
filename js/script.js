@@ -9,9 +9,14 @@ let btn = document.getElementById("butn");
 let signup = document.getElementById("signup");
 let login = document.getElementById("login");
 
-let submit = document.getElementById("submit");
+let submit = document.getElementById("signsub");
 
 submit.addEventListener("click", userDash);
+submit.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent form submission
+    userDash();
+});
+
 
 signup.addEventListener("click", signUp);
 login.addEventListener("click", logIn);
@@ -39,19 +44,20 @@ function navOpen() {
 }
 
 function signUp() {
-    window.location.href = "../Job-Hunting-Website/pages/signup.html";
+    window.location.href = "../pages/signup.html";
 }
 
 function logIn() {
-    window.location.href = "/Job-Hunting-Website/pages/signup.html";
+    window.location.href = "../pages/login.html";
 }
 
 function userDash() {
-    window.location.href = "/Job-Hunting-Website/pages/dashboard.html";
+    window.location.href = "../pages/dashboard.html";
 }
 
 /*
 function goHome() {
     window.location.href = "../index.html";
+    /Job-Hunting-Website
 }
     */

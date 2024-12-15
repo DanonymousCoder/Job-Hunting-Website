@@ -1,12 +1,13 @@
 let defDisplay = document.getElementById("date-range-display");
 let updDate = document.getElementById("update-date");
 let form = document.getElementById("signupp");
+let submiT = document.getElementById("signsub");
 
 
 defDisplay.addEventListener("click", showDate);
 updDate.addEventListener("click", updateDate);
 
-form.addEventListener("submit", saveDetails);
+submiT.addEventListener("submit", saveDetails);
 
 function showDate() {
     const form = document.getElementById("date-range-form");
