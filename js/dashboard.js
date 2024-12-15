@@ -1,9 +1,12 @@
 let defDisplay = document.getElementById("date-range-display");
 let updDate = document.getElementById("update-date");
+let form = document.getElementById("signup");
 
 
 defDisplay.addEventListener("click", showDate);
 updDate.addEventListener("click", updateDate);
+
+form.addEventListener("submit", saveDetails);
 
 function showDate() {
     const form = document.getElementById("date-range-form");
@@ -29,3 +32,9 @@ function updateDate() {
     }
 }
 
+function saveDetails() {
+  const fname = document.getElementById("fname").value;
+
+  let dashName= document.getElementById("fulname");
+  dashName.innerHTML = fname;
+}
