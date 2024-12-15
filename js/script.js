@@ -11,7 +11,7 @@ let login = document.getElementById("login");
 
 let submit = document.getElementById("submit");
 
-submit.addEventListener("click", userDash());
+submit.addEventListener("click", userDash);
 
 function userDash() {
     window.location.href = "/Job-Hunting-Website/pages/dashboard.html";
