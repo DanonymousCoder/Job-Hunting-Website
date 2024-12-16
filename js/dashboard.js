@@ -1,6 +1,20 @@
 let defDisplay = document.getElementById("date-range-display");
 let updDate = document.getElementById("update-date");
 
+let dashBoard = document.getElementById("dashb");
+let messages = document.getElementById("message");
+
+let messagesTab = document.getElementById("messages-tab");
+let dashTab = document.getElementById("dashboard");
+
+messages.addEventListener("click",() => {
+  messages.classList.add("active");
+  dashBoard.classList.remove("active");
+
+  messagesTab.classList.add("active2")
+  dashTab.classList.remove("active2")
+} )
+
 
 defDisplay.addEventListener("click", showDate);
 updDate.addEventListener("click", updateDate);
