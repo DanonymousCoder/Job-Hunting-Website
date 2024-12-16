@@ -49,4 +49,4 @@ function goHome() {
     window.location.href = "../index.html";
     /Job-Hunting-Website
 }
-    */
+    */   

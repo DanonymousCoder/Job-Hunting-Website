@@ -591,6 +591,41 @@ input::placeholder{
     padding: 10px 20px;
  }
 
+ .mid .bold {
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: left;
+   color: #25324B;
+ }
+
+ .mid p {
+   font-family: "Inter", sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 25.6px;
+   text-align: left;
+   color: #7C8493;
+ }
+
+ #fulname {
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 28.8px;
+   text-align: left;
+   color: #202430;
+ }
+
+#maail {
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 22.4px;
+   text-align: left;
+}
+
  .col3 img {
     height: 48px;
  }
