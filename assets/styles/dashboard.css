@@ -803,10 +803,11 @@ input::placeholder{
 
 .search .bx-search {
    position: absolute;
-   left: 10px;
-   top: 5px;
+   left: 8%;
+   top: 50%;
    font-size: 24px;
    color: #D6DDEB;
+   transform: translate(-50%, -50%);
 }
 
 .search input {
@@ -819,6 +820,16 @@ input::placeholder{
 
 .search input:focus {
    border: 1px solid #D6DDEB;
+}
+
+.chats .people {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.person {
+   width: 100%;
 }
 
  .dm {
