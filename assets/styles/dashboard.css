@@ -595,14 +595,14 @@ input::placeholder{
     color: #7C8493;
  }
 
- .mid {
+.col3 .mid {
     display: flex;
     gap: 1em;
     align-items: center;
     padding: 10px 20px;
  }
 
- .mid .box {
+.col3 .mid .box {
     display: flex;
     gap: .5em;
     padding: 10px;
@@ -611,7 +611,7 @@ input::placeholder{
     padding: 10px 20px;
  }
 
- .mid .bold {
+.col3 .mid .bold {
    font-family: "Inter", sans-serif;
    font-size: 16px;
    font-weight: 600;
@@ -620,7 +620,7 @@ input::placeholder{
    color: #25324B;
  }
 
- .mid p {
+.col3 .mid p {
    font-family: "Inter", sans-serif;
    font-size: 14px;
    font-weight: 500;
@@ -787,11 +787,11 @@ input::placeholder{
  .chat-tab {
    width: 100%;
    display: flex;
+   margin-bottom: 30px;
  }
 
  .chats {
-   width: 30%;
-   background-color: #0056b3;
+   width: 35%;
    height: 100vh;
    padding: 30px;
  }
@@ -814,7 +814,7 @@ input::placeholder{
    width: 100%;
    padding: 12px 16px;
    border: 1px solid #D6DDEB;
-   padding-left: 40px;
+   padding-left: 45px;
    height: 50px;
 }
 
@@ -826,14 +826,72 @@ input::placeholder{
    display: flex;
    flex-direction: column;
    width: 100%;
+   padding-top: 10px;
 }
 
-.person {
+.first-p {
+   margin-top: 20px;
+   background-color: #E9EBFD;
+   border-bottom: none !important;
+}
+
+.messages .person {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 1em;
+   padding: 16px;
+   border-bottom: 1px solid #D3D6DB;
+}
+
+.person .info {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: .5em;
+}
+
+.person .top {
+   display: flex;
+   justify-content: space-between;
    width: 100%;
 }
 
+.person .top .fir {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.person .top p.bold {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: left;
+   color: #25324B;
+}
+
+.person .top p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: right;
+   color: #7C8493;
+}
+
+.person .bottom p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: left;
+}
+
  .dm {
-   width: 70%;
-   background-color: #202430;
+   width: 65%;
    height: 100vh;
+   border-left: 1px solid #D3D6DB;
  }
