@@ -178,7 +178,7 @@ nav .top .help {
 
 .setts h5 {
     padding-bottom: 20px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
@@ -208,7 +208,7 @@ p#fname {
 }
 
 p#mail {
-    font-family: "sEpilogue", sans-serif;
+    font-family: "Epilogue", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.4px;
@@ -254,7 +254,7 @@ main .head {
 }
 
 main h3 {
-    font-family: "ClashDisplay Variable", sans-serif;
+    font-family: "ClashDisplay-Variable", sans-serif;
     font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
@@ -290,7 +290,7 @@ main .greet {
 }
 
 .greet h4 {
-    font-family: "ClashDisplay Variable", sans-serif;
+    font-family: "ClashDisplay-Variable", sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 28.8px;
@@ -312,7 +312,7 @@ main .greet {
 }
 
 .date span {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -351,7 +351,7 @@ input {
 }
 
 input::placeholder{
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -366,7 +366,7 @@ input::placeholder{
     border: none;
     cursor: pointer;
     color: #FFFFFF;
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 25.6px;
@@ -412,7 +412,7 @@ input::placeholder{
  }
 
  .hd {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -473,7 +473,7 @@ input::placeholder{
  }
 
  .col2 .txt  p.bold {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 28.8px;
@@ -482,7 +482,7 @@ input::placeholder{
  }
 
  .col2 .txt p {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -499,7 +499,7 @@ input::placeholder{
  }
 
  .col2 .sd a {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 25.6px;
@@ -706,7 +706,7 @@ input::placeholder{
  }
 
  .main .location p {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -715,7 +715,7 @@ input::placeholder{
  }
 
  .row .dat .hed {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 25.6px;
@@ -732,7 +732,7 @@ input::placeholder{
  }
 
  .row .status p {
-    font-family: "Epilogue";
+    font-family: "Epilogue", sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 22.4px;
@@ -894,4 +894,113 @@ input::placeholder{
    width: 65%;
    height: 100vh;
    border-left: 1px solid #D3D6DB;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .dm .heading {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #D6DDEB;
+   padding-left: 10px;
+   padding-right: 20px;
+ }
+
+ .dm .person {
+   border-bottom: none !important;
+ }
+
+ .dm .person .info {
+   gap: 5px;
+ }
+
+ .heading .images {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+ }
+
+ .heading .images i {
+   color: #25324B;
+   font-size: 21px;
+   opacity: 50%;
+ }
+
+ .dm .bio {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+   align-items: center;
+   margin-top: 50px;
+   border-bottom: 1px solid #D6DDEB;
+   position: relative;
+ }
+
+ .bio img {
+   height: 88px;
+ }
+
+ .bio h4 {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 28.8px;
+   text-align: center;
+ }
+
+ .bio p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: center;
+   color: #515B6F;
+ }
+
+ .bio p a {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: center;
+   color: #4640DE;
+ }
+
+ .bio .sec span {
+   color: #25324B;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   text-align: left;
+ }
+
+ .bio .sec {
+   color: #7C8493;
+ }
+
+ .bio .nox {
+   display: flex;
+   background-color: #FFFFFF;
+   border: 1px solid #D6DDEB;
+   padding: 12px 16px;
+   gap: .5em;
+ }
+
+ .bio .nox  i {
+   font-size: 24px;
+   color: #25324B;
+ }
+
+ .bio .nox p {
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   text-align: left;
+   color: #25324B;
  }
