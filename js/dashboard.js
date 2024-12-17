@@ -6,6 +6,8 @@ let messages = document.getElementById("message");
 
 let messagesTab = document.getElementById("messages-tab");
 let dashTab = document.getElementById("dashboard");
+let appTab = document.getElementById("applications");
+let app = document.getElementById("app-tab");
 
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
@@ -27,6 +29,15 @@ dashBoard.addEventListener("click",() => {
 
   messagesTab.classList.remove("active2")
   dashTab.classList.add("active2")
+} )
+
+app.addEventListener("click",() => {
+  messages.classList.remove("active");
+  dashBoard.classList.add("active");
+
+  messagesTab.classList.remove("active2");
+  dashTab.classList.remove("active2");
+  appTab.classList.add("active2")
 } )
 
 
