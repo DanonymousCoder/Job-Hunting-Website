@@ -930,7 +930,7 @@ input::placeholder{
  }
 
  .dm .bio {
-   width: 80%;
+   width: 90%;
    display: flex;
    flex-direction: column;
    gap: .5em;
@@ -938,6 +938,7 @@ input::placeholder{
    margin-top: 50px;
    border-bottom: 1px solid #D6DDEB;
    position: relative;
+   padding-bottom: 50px;
  }
 
  .bio img {
@@ -985,10 +986,14 @@ input::placeholder{
 
  .bio .nox {
    display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #FFFFFF;
    border: 1px solid #D6DDEB;
    padding: 12px 16px;
    gap: .5em;
+   position: absolute;
+   bottom: -25px;
  }
 
  .bio .nox  i {
@@ -1004,3 +1009,82 @@ input::placeholder{
    text-align: left;
    color: #25324B;
  }
+
+ .msg-txt {
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   width: 90%;
+ }
+
+ .msg-txt .jan {
+   display: flex;
+   gap: .5em;
+   width: 80%;
+   align-items: flex-start;
+   justify-self: flex-start;
+ }
+
+ .jan .texts {
+   display: flex;
+   flex-direction: column;
+   gap: .7em;
+ }
+
+ .bold {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: left;
+   color: #25324B;
+}
+
+.double {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.double p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   text-align: left;
+   border: 1px solid #D6DDEB;
+   padding: 12px 50px 12px 16px;
+}
+
+.time {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: left;
+   color: #7C8493;
+}
+
+.wrapper {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+}
+
+.msg-txt .user {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-self: flex-start;
+   justify-content: flex-start;
+   width: 80%;
+   gap: 1em;
+}
+
+.msg-txt .user  .bold {
+   text-align: right;
+}
+
+.msg-txt .user  .time {
+   text-align: right;
+}
