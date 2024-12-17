@@ -235,6 +235,16 @@ main {
    width: 0%;
 }
 
+.saver {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3em;
+   margin-top: 30px;
+}
+
 main .right .first {
    border: none !important;
 }
@@ -1151,7 +1161,7 @@ input::placeholder{
    padding: 10px 30px;
 }
 
-main.application .new-feat {
+.application .new-feat {
    background-color: #F6F6FD;
    display: flex;
    justify-content: space-between;
@@ -1160,13 +1170,13 @@ main.application .new-feat {
    width: 90%;
 }
 
-.new-feat .left {
+.application .new-feat .left {
    display: flex;
    gap: 1em;
    align-items: center;
 }
 
-.new-feat .txt {
+.application .new-feat .txt {
    display: flex;
    flex-direction: column;
    gap: .7em;
@@ -1174,7 +1184,7 @@ main.application .new-feat {
    justify-content: center;
 }
 
-.new-feat .hd {
+.application .new-feat .hd {
    font-family: "Inter", sans-serif;
    font-size: 18px;
    font-weight: 600;
@@ -1183,7 +1193,7 @@ main.application .new-feat {
    color: #4640DE;
 }
 
-.new-feat .sb {
+.application .new-feat .sb {
    color: #7C8493;
    font-family: "Inter", sans-serif;
    font-size: 16px;
@@ -1192,7 +1202,7 @@ main.application .new-feat {
    text-align: left;
 }
 
-.sections {
+.application .sections {
    display: flex;
    gap: 1em;
    width: 100%;
@@ -1201,7 +1211,7 @@ main.application .new-feat {
    border-bottom: 1px solid #D6DDEB;
 }
 
-.sections p {
+.application .sections p {
    font-family: "Epilogue", sans-serif;
    font-size: 16px;
    font-weight: 600;
@@ -1352,13 +1362,13 @@ main.application .new-feat {
    justify-content: flex-start;
 }
 
-.company {
+.application .company {
    display: flex;
    align-items: center;
    gap: .5em;
 }
 
-.company p {
+.application .company p {
    font-family: "Inter", sans-serif;
    font-size: 16px;
    font-weight: 400;
@@ -1397,11 +1407,11 @@ main.application .new-feat {
    color: #25324B;
 }
 
-.status1,
+.application .status1,
 .status2,
 .status3,
-.status4,
-.status5 {
+.application .status4,
+.application .status5 {
    font-family: "Epilogue", sans-serif;
    font-size: 14px;
    font-weight: 600;
@@ -1415,58 +1425,58 @@ main.application .new-feat {
    height: 50px;
 }
 
-.status1 {
+.application .status1 {
    color: #FFB836;
    border: 1px solid #FFB836;
 }
 
-.status2 {
+.application .status2 {
    color: #56CDAD;
    border: 1px solid #56CDAD;
 }
 
-.status3 {
+.application .status3 {
    color: #4640DE;
    border: 1px solid #4640DE;
 }
 
-.status4 {
+.application .status4 {
    color: #FFB836;
    border: 1px solid #FFB836;
 }
 
-.status5 {
+.application .status5 {
    color: #FF6550;
    border: 1px solid #FF6550;
 }
 
-.have-bg {
+.application .application .have-bg {
    background-color: #F8F8FD;
 }
 
-.pagination {
+.application .pagination {
    display: flex;
    justify-self: center;
    align-items: center;
    gap: .5em;
 }
 
-.pagination i {
+.application .pagination i {
    font-size: 24px;
    color: #25324B;
 }
 
-.pagination .num {
+.application .pagination .num {
    display: flex;
    gap: .3em;
    align-items: center;
 }
 
-.num div {
+.application .num div {
    padding: 10px 12px;
 }
 
-.num p{
+.application .num p{
    font-family: "Inter", sans-serif;
    font-size: 16px;
    font-weight: 600;
@@ -1475,14 +1485,14 @@ main.application .new-feat {
    color: #515B6F;
 }
 
-.on-page {
+.application .on-page {
    background-color: #4640DE;
    border-radius: 8px;
    width: 46px;
    height: 46px;
 }
 
-.on-page p {
+.application .on-page p {
    color: #FFFFFF;
 }
 
