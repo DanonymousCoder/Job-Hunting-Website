@@ -6,8 +6,8 @@ let messages = document.getElementById("message");
 
 let messagesTab = document.getElementById("messages-tab");
 let dashTab = document.getElementById("dashboard");
-let appTab = document.getElementById("applications");
-let app = document.getElementById("app-tab");
+let app = document.getElementById("applications");
+let appTab = document.getElementById("app-tab");
 
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
@@ -20,7 +20,8 @@ darkTog.addEventListener("click", darkInit);
   dashBoard.classList.remove("active");
 
   messagesTab.classList.add("active2")
-  dashTab.classList.remove("active2")
+  dashTab.classList.remove("active2");
+  appTab.classList.remove("active2");
 } )
 
 dashBoard.addEventListener("click",() => {
@@ -28,16 +29,18 @@ dashBoard.addEventListener("click",() => {
   dashBoard.classList.add("active");
 
   messagesTab.classList.remove("active2")
-  dashTab.classList.add("active2")
+  dashTab.classList.add("active2");
+  appTab.classList.remove("active2");
 } )
 
 app.addEventListener("click",() => {
   messages.classList.remove("active");
-  dashBoard.classList.add("active");
+  dashBoard.classList.remove("active");
+  app.classList.add("active");
 
   messagesTab.classList.remove("active2");
   dashTab.classList.remove("active2");
-  appTab.classList.add("active2")
+  appTab.classList.add("active2");
 } )
 
 
@@ -76,11 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const maail = document.getElementById("maail");
   const mail = localStorage.getItem("eMail");
 
+  const firname = document.getElementById("firname");
+  const firname_ = document.getElementById("firname2");
 
 
   if (fullName && mail) {
       dashName.textContent = fullName;
       maail.textContent = mail;
+
+      nameSplit = fullName.split(' ');
+      firname.textContent = nameSplit[0];
+      firname_.textContent = nameSplit[0];
   } else {
       dashName.textContent = "Guest"; // Fallback if no name is found
   }
