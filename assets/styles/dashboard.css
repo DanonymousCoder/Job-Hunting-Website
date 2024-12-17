@@ -1422,8 +1422,59 @@ main.application .new-feat {
    border: 1px solid #4640DE;
 }
 
+.status4 {
+   color: #FFB836;
+   border: 1px solid #FFB836;
+}
+
+.status5 {
+   color: #FF6550;
+   border: 1px solid #FF6550;
+}
+
 .have-bg {
    background-color: #F8F8FD;
+}
+
+.pagination {
+   display: flex;
+   justify-self: center;
+   align-items: center;
+}
+
+.pagination i {
+   font-size: 24px;
+   color: #25324B;
+}
+
+.pagination .num {
+   display: flex;
+   gap: .3em;
+   align-items: center;
+}
+
+.num div {
+   padding: 10px 12px;
+}
+
+.num p{
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: center;
+   color: #515B6F;
+}
+
+.on-page {
+   background-color: #4640DE;
+   border-radius: 8px;
+   width: 46px;
+   height: 46px;
+}
+
+.on-page p {
+   color: #FFFFFF;
 }
 
 /*
