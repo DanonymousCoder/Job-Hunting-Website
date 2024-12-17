@@ -7,12 +7,25 @@ let messages = document.getElementById("message");
 let messagesTab = document.getElementById("messages-tab");
 let dashTab = document.getElementById("dashboard");
 
+let cont = document.getElementById("container");
+let darkTog = document.getElementById("dark-mode");
+let lightTog = document.getElementById("icon");
+darkTog.addEventListener("click", darkInit);
+
 messages.addEventListener("click",() => {
   messages.classList.add("active");
   dashBoard.classList.remove("active");
 
   messagesTab.classList.add("active2")
   dashTab.classList.remove("active2")
+} )
+
+dashBoard.addEventListener("click",() => {
+  messages.classList.remove("active");
+  dashBoard.classList.add("active");
+
+  messagesTab.classList.remove("active2")
+  dashTab.classList.add("active2")
 } )
 
 
@@ -60,3 +73,18 @@ document.addEventListener("DOMContentLoaded", () => {
       dashName.textContent = "Guest"; // Fallback if no name is found
   }
 });
+
+
+function darkInit() {
+  cont.classList.toggle("dark");
+  
+
+  // Toggle the icon between moon and sun
+  if (lightTog.classList.contains("bx-moon")) {
+      lightTog.classList.remove("bx-moon");
+      lightTog.classList.add("bx-sun");
+  } else {
+      lightTog.classList.remove("bx-sun");
+      lightTog.classList.add("bx-moon");
+  }
+}

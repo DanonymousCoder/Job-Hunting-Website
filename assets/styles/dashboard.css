@@ -227,6 +227,10 @@ main {
    width: 0%;
 }
 
+main .right .first {
+   border: none !important;
+}
+
 main.active2 {
     width: 100%;
     display: flex;
@@ -787,12 +791,11 @@ input::placeholder{
  .chat-tab {
    width: 100%;
    display: flex;
-   margin-bottom: 30px;
  }
 
  .chats {
    width: 35%;
-   height: 100vh;
+   height: auto;
    padding: 30px;
  }
 
@@ -892,11 +895,19 @@ input::placeholder{
 
  .dm {
    width: 65%;
-   height: 100vh;
    border-left: 1px solid #D3D6DB;
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding-bottom: 30px;
+ }
+
+ .dm .top {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
  }
 
  .dm .heading {
@@ -1087,4 +1098,76 @@ input::placeholder{
 
 .msg-txt .user  .time {
    text-align: right;
+}
+
+.message-box {
+   width: 90%;
+   display: flex;
+   align-items: flex-end;
+   margin-top: 50px;
+   position: relative;
+}
+
+.message-box .clip {
+   position: absolute;
+   left: 15px;
+   top: 25%;
+   height: 24px;
+}
+
+.dm .message-box input {
+   border: 1px solid #D6DDEB;
+   width: 100%;
+   height: 56px;
+   padding: 20px 20px 20px 50px;
+}
+
+.dm .message-box .rit {
+   position: absolute;
+   right: 10px;
+   top: 15%;
+   line-height: 56px;
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.dm .message-box .rit i {
+   font-size: 24px;
+   color: #25324B;
+   opacity: 50%;
+}
+
+.message-box .rit img {
+   background-color: #4640DE;
+   padding: 10px 30px;
+}
+
+
+
+/*
+   DARK MODE
+*/
+
+.container.dark nav {
+   background-color: #202430;
+}
+
+.container.dark nav .logo {
+   color: #FFFFFF;
+}
+
+.container.dark nav .active{
+   background-color: #FFFFFF;
+}
+
+.container.dark nav .links .active p {
+   color: #4640DE;
+}
+
+.container.dark nav .links p,
+.container.dark nav .setts p,
+.container.dark nav .bottom p,
+.container.dark nav .bottom p#fulname   {
+   color: #FFFFFF;
 }
