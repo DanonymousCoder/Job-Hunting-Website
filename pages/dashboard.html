@@ -52,22 +52,22 @@
                         <img src="../assets/images/Badge.png" alt="">
                     </div>
     
-                    <div class="app">
+                    <div class="app" id="applications">
                         <i class='bx bx-file'></i>
                         <p>My Applications</p>
                     </div>
     
-                    <div class="find">
+                    <div class="find" id="find">
                         <i class='bx bx-search' ></i>
                         <p>Find Jobs</p>
                     </div>
     
-                    <div class="browse">
+                    <div class="browse" id="browse">
                         <i class='bx bx-building-house'></i>
                         <p>Browse Companies</p>
                     </div>
     
-                    <div class="pub">
+                    <div class="pub" id="pub-profile">
                         <i class='bx bx-user'></i>
                         <p>My Public Profile</p>
                     </div>
@@ -77,12 +77,12 @@
 
                     <h5>Settings</h5>
     
-                    <div class="settings">
+                    <div class="settings" id="settings">
                         <i class='bx bx-cog'></i>
                         <p>Settings</p>
                     </div>
     
-                    <div class="help">
+                    <div class="help" id="help">
                         <i class='bx bx-help-circle' ></i>
                         <p>Help Center</p>
                     </div>
@@ -102,7 +102,7 @@
         </nav>
     
       <div class="content">
-        <main class="dashboard active2" id="dashboard">
+        <main class="dashboard active20" id="dashboard">
             <div class="cont">
                 <div class="head">
                     <div class="title">
@@ -605,6 +605,58 @@
                 </div>
             </div>
         </main>
+
+        <main class="application active2" id="app-tab">
+            <div class="cont">
+                <div class="head">
+                    <div class="title">
+                        <h3>My Applications</h3>
+                    </div>
+    
+                    <div class="right">
+                        <a class="first" id="dark-mode"><i id="icon" class='bx bx-moon'></i></a>
+                        <a href="../index.html">Back to homepage</a>
+                        <i class='bx bx-bell'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="greet">
+                <div class="text">
+                    <h4>Keep it up, Jake</h4>
+                    <p>
+                        Here is job applications status from July 19 - July 25.
+                    </p>
+                </div>
+
+                <div class="date">
+                    <div class="date-range-display" id="date-range-display">
+                       <div class="txt">
+                            <span id="start-date">July 19</span>
+                            <span class="separator">-</span>
+                            <span id="end-date">July 25</span>
+                       </div>
+
+                        <i class='bx bx-calendar-edit' id="date-edit"></i>
+                      </div>
+
+                      <div class="date-range-form" id="date-range-form">
+                        <label for="start">Start Date:</label>
+                        <input type="date" id="start" />
+                      
+                        <label for="end">End Date:</label>
+                        <input type="date" id="end" />
+                      
+                        <button id="update-date">Update</button>
+                      </div>
+                </div>
+            </div>
+
+            <div class="new-feat">
+                
+            </div>
+        </main>
+
       </div>
 
     </div>

@@ -10,6 +10,7 @@ let dashTab = document.getElementById("dashboard");
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
 let lightTog = document.getElementById("icon");
+
 darkTog.addEventListener("click", darkInit);
 
 messages.addEventListener("click",() => {
@@ -58,7 +59,7 @@ function updateDate() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dashName = document.getElementById("fulname");
+  const dashName = document.querySelectorAll('#fulname');
   const fullName = localStorage.getItem("fullName");
 
   const maail = document.getElementById("maail");
@@ -76,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function darkInit() {
-  cont.classList.toggle("dark");
   
 
   // Toggle the icon between moon and sun
@@ -88,3 +88,31 @@ function darkInit() {
       lightTog.classList.add("bx-moon");
   }
 }
+
+const parentLinks = document.querySelectorAll('.links > div');
+const parentSetts = document.querySelectorAll('.setts > div');
+const parentTabs = document.querySelectorAll('.content > main');
+
+    parentLinks.forEach(link => {
+        link.addEventListener('click', () => {
+           
+            parentLinks.forEach(item => item.classList.remove('active'));
+
+            
+            link.classList.add('active');
+        });
+    });
+
+    parentSetts.forEach(sett => {
+      sett.addEventListener('click', () => {
+         
+          parentSetts.forEach(item => item.classList.remove('active'));
+
+          
+          sett.classList.add('active');
+      });
+  });
+/*
+parentTabs.forEach(tab => {
+  tab.classList.add
+}) */
