@@ -59,7 +59,7 @@ function updateDate() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const dashName = document.querySelectorAll('#fulname');
+  const dashName = document.getElementById('fulname');
   const fullName = localStorage.getItem("fullName");
 
   const maail = document.getElementById("maail");
