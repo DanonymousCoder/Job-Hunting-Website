@@ -21,6 +21,14 @@ a {
     display: flex;
 }
 
+.tab {
+   display: none; 
+ }
+ 
+ .tab.active2 {
+   display: block; 
+ }
+
 nav {
     width: 20%;
     height: 100%;
@@ -1440,6 +1448,7 @@ main.application .new-feat {
    display: flex;
    justify-self: center;
    align-items: center;
+   gap: .5em;
 }
 
 .pagination i {

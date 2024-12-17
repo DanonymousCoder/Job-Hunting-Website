@@ -1,118 +1,48 @@
-let defDisplay = document.getElementById("date-range-display");
-let updDate = document.getElementById("update-date");
+const parentLinks = document.querySelectorAll('.links > div'); // Navigation links
+const parentSetts = document.querySelectorAll('.setts > div'); // Settings links
+const parentTabs = document.querySelectorAll('.content > main'); // Content tabs
 
-let dashBoard = document.getElementById("dashb");
-let messages = document.getElementById("message");
-
-let messagesTab = document.getElementById("messages-tab");
-let dashTab = document.getElementById("dashboard");
-
-let cont = document.getElementById("container");
-let darkTog = document.getElementById("dark-mode");
-let lightTog = document.getElementById("icon");
-
-darkTog.addEventListener("click", darkInit);
-
-messages.addEventListener("click",() => {
-  messages.classList.add("active");
-  dashBoard.classList.remove("active");
-
-  messagesTab.classList.add("active2")
-  dashTab.classList.remove("active2")
-} )
-
-dashBoard.addEventListener("click",() => {
-  messages.classList.remove("active");
-  dashBoard.classList.add("active");
-
-  messagesTab.classList.remove("active2")
-  dashTab.classList.add("active2")
-} )
-
-
-defDisplay.addEventListener("click", showDate);
-updDate.addEventListener("click", updateDate);
-
-
-function showDate() {
-    const form = document.getElementById("date-range-form");
-    form.style.display = form.style.display === "flex" ? "none" : "flex";
+// Function to reset active classes for navigation and tabs
+function resetActive(elements, className) {
+  elements.forEach(el => el.classList.remove(className));
 }
 
+// Handle click for navigation links and tabs
+parentLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    // Remove 'active' class from all links and tabs
+    resetActive(parentLinks, 'active');
+    resetActive(parentTabs, 'active2');
 
-function updateDate() {
-    const startInput = document.getElementById("start").value;
-    const endInput = document.getElementById("end").value;
-  
-    if (startInput && endInput) {
-      const startDate = new Date(startInput).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-      const endDate = new Date(endInput).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-  
-      document.getElementById("start-date").textContent = startDate;
-      document.getElementById("end-date").textContent = endDate;
-  
-      // Hide the form after updating
-      document.getElementById("date-range-form").style.display = "none";
-    } else {
-      alert("Please select both start and end dates.");
-    }
-}
+    // Add 'active' class to the clicked link
+    link.classList.add('active');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const dashName = document.querySelectorAll('#fulname');
-  const fullName = localStorage.getItem("fullName");
+    // Get the corresponding tab using the 'data-tab' attribute
+    const targetTabId = link.getAttribute('data-tab');
+    const targetTab = document.getElementById(targetTabId);
 
-  const maail = document.getElementById("maail");
-  const mail = localStorage.getItem("eMail");
+    // Add 'active2' to the matching tab
+    if (targetTab)  {
+      targetTab.classList.add('active2');
+    };
+  });
+});
 
-
-
-  if (fullName && mail) {
-      dashName.textContent = fullName;
-      maail.textContent = mail;
-  } else {
-      dashName.textContent = "Guest"; // Fallback if no name is found
-  }
+// Handle click for settings links (if required)
+parentSetts.forEach(sett => {
+  sett.addEventListener('click', () => {
+    resetActive(parentSetts, 'active');
+    sett.classList.add('active');
+  });
 });
 
 
-function darkInit() {
-  
+const darkTog = document.getElementById("dark-mode");
+const lightTog = document.getElementById("icon");
 
-  // Toggle the icon between moon and sun
-  if (lightTog.classList.contains("bx-moon")) {
-      lightTog.classList.remove("bx-moon");
-      lightTog.classList.add("bx-sun");
-  } else {
-      lightTog.classList.remove("bx-sun");
-      lightTog.classList.add("bx-moon");
-  }
+function darkInit() {
+  lightTog.classList.toggle("bx-moon");
+  lightTog.classList.toggle("bx-sun");
 }
 
-const parentLinks = document.querySelectorAll('.links > div');
-const parentSetts = document.querySelectorAll('.setts > div');
-const parentTabs = document.querySelectorAll('.content > main');
-
-    parentLinks.forEach(link => {
-        link.addEventListener('click', () => {
-           
-            parentLinks.forEach(item => item.classList.remove('active'));
-
-            
-            link.classList.add('active');
-        });
-    });
-
-    parentSetts.forEach(sett => {
-      sett.addEventListener('click', () => {
-         
-          parentSetts.forEach(item => item.classList.remove('active'));
-
-          
-          sett.classList.add('active');
-      });
-  });
-/*
-parentTabs.forEach(tab => {
-  tab.classList.add
-}) */
+darkTog.addEventListener("click", darkInit);
