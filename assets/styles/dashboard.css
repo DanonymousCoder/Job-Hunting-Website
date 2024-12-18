@@ -1544,12 +1544,15 @@ input::placeholder{
    display: flex;
    gap: 1em;
    width: 40%;
+   position: relative;
    padding: 0 50px 0 0;
    border-right: 1px solid #D6DDEB;
 }
 
-.find .search .key {
-
+.find .search .key  i{
+   position: absolute;
+   top: 20px;
+   left: 15px;
 }
 
 .find .key input,
@@ -1586,6 +1589,7 @@ input::placeholder{
    font-weight: 700;
    line-height: 26px;
    text-align: center;
+   max-width: 30%;
 }
 
 .find .have-bg {
@@ -2013,8 +2017,3 @@ main .help {
 .d2 p:last-child {
    background-color: #56CDAD1A;
 }
-
-.boxes {
-   display: flex;
-   width: 100%;
-   justify-content: space-betwe
