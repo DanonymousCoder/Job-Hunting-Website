@@ -1312,6 +1312,7 @@ input::placeholder{
    display: flex;
    flex-direction: column;
    gap: 1em;
+   border-bottom: 1px solid #D6DDEB;
 }
 
 .no-2 .company img,
@@ -1502,6 +1503,167 @@ input::placeholder{
    color: #FFFFFF;
 }
 
+.search-box {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-bottom: 1px solid #D6DDEB;
+   padding-bottom: 50px;
+   gap: 1em;
+}
+
+.search-box p {
+   display: flex;
+   justify-content: flex-start;
+   width: 90%;
+   color: #515B6F;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+}
+
+.find .search {
+   width: 90%;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 6.86px 11.12px 0px #C0C0C00A;
+    box-shadow: 0px 14px 22.68px 0px #C0C0C00C;
+    box-shadow: 0px 28.84px 46.72px 0px #C0C0C00F;
+    box-shadow: 0px 79px 128px 0px #C0C0C017;
+    padding: 20px;
+    border: 1px solid #D6DDEB;
+}
+
+.find .search .key {
+   display: flex;
+   gap: 1em;
+   width: 40%;
+   padding: 0 50px 0 0;
+   border-right: 1px solid #D6DDEB;
+}
+
+.find .search .key {
+
+}
+
+.find .key input,
+.find .location select {
+   border: none;
+   border-bottom: 1px solid;
+   padding-bottom: 1em;
+   width: 100%;
+}
+
+.find .key input::placeholder {
+   color: #7C8493;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: left;
+}
+
+.find .key input:focus {
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #D6DDEB
+}
+
+.find button {
+   color: #4640DE;
+   border: none;
+   background: transparent;
+   outline: none;
+   padding: 12px 24px;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 26px;
+   text-align: center;
+}
+
+.find .have-bg {
+   background-color: #4640DE;
+   color: #FFFFFF;
+}
+
+.find .sch,
+.find .loc {
+    font-size: 30px;
+}
+
+.find .location {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.custom-select {
+   appearance: none;
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid #ddd;
+   font-size: 16px;
+   padding-bottom: 1em;
+   color: #25324B;
+   cursor: pointer;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   text-align: left;
+}
+
+.custom-select::after {
+   content: "";
+   background-image: url('../images/chevron-down-regular-24.png');
+   position: absolute;
+   right: 5px;
+   font-size: 12px;
+   color: #25324B;
+   pointer-events: none;
+}
+
+.custom-select:focus {
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #D6DDEB;
+}
+
+.custom-select option {
+   padding: 10px;
+}
+
+.select-wrapper {
+   position: relative;
+   width: 100%;
+   display: inline-block;
+}
+
+.find .search-box p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: left;
+   color: #202430;
+}
+
+.find .search-box p span {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25.6px;
+   text-align: left;
+}
+
+
 /*
    DARK MODE
 */
@@ -1532,3 +1694,327 @@ input::placeholder{
 .invisible {
    display: none;
 }
+
+
+/*
+   toy
+*/
+main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5em;
+   padding-top: 50px;
+   position: relative;
+}
+
+.illustr1 {
+   position: absolute;
+   top: -150px;
+   right: 0;
+   height: 200px;
+   width: 30%;
+}
+
+main .help {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: 1.3em;
+}
+
+.help p.head {
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28.8px;
+   text-align: left;
+   color: #202430;
+}
+
+.help p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28.8px;
+   text-align: left;
+   color: #202430;
+}
+
+.help .companies {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.help .companies img {
+   width: auto;
+   height: 25px;
+}
+
+.explore {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   justify-content: center;
+   align-items: center;
+}
+
+.head {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.head h2 {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 53px;
+   text-align: left;
+   color: #26A4FF;
+}
+
+.head p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .5em;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 26px;
+   color: #4640DE;
+}
+
+.explore .boxes {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   width: 100%;
+}
+
+.explore .boxes .row {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.explore .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 1em;
+   border: 1px solid #D6DDEB;
+   background-color: #FFFFFF;
+   height: 214px;
+   width: 23%;
+   padding-left: 2%;
+}
+
+.explore .box.hover {
+   background-color: #4640DE;
+   color: white !important;
+}
+
+.explore .box.hover .sub {
+   color: #FFFFFF;
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28.8px;
+   text-align: left;
+}
+
+.box p {
+   font-family: "ClaashDisplay-Variable", sans-serif;
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 28.8px;
+   text-align: left;
+}
+
+.explore .box .sub {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+   justify-content: center;
+   color: #7C8493;
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28.8px;
+   text-align: left;
+}
+
+.cta {
+   width: 80%;
+   background-color: #4640DE;
+   clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 30px 50px;
+   height: 414px;
+   margin-bottom: 100px;
+}
+
+.left {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 1em;
+   padding-left: 40px;
+}
+
+.right {
+   width: 50%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   position: relative;
+   z-index: -1;
+}
+
+.cta .left h2 {
+   font-family: "ClasjDisplay-Variable", sans-serif;
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 52.8px;
+   text-align: left;
+   color: #FFFFFF;
+}
+
+.left p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 52.8px;
+   text-align: left;
+   color: #FFFFFF;
+}
+
+.cta .left button {
+   background-color: #FFFFFF;
+   color: #4640DE;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 25.6px;
+   text-align: center;
+   padding: 15px 30px;
+   border: none;
+   outline: none;
+}
+
+.cta .right {
+   width: 50%;
+   position: relative;
+}
+
+.right img {
+   position: absolute;
+   bottom: -207px;
+   object-position: center;
+   height: 344px;
+   width: 100%;
+   right: 20px;
+   z-index: 100;
+}
+
+.featured {
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   gap: 3em;
+   margin-bottom: 100px;
+}
+
+.featured .box {
+   max-width: 287px;
+   border: 1px solid #4640DE;
+   color: #4640DE;
+   font-family: "Eilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: center;
+   height: 45px;
+   width: 90px;
+}
+
+.featured .down {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.d1 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 2px;
+}
+
+.d1 p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 28.8px;
+   text-align: left;
+   color: #25324B;
+}
+
+.d1 .loc {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .4em;
+}
+
+.d1 .loc p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 25.6px;
+   text-align: left;
+}
+
+.featured p.sub {
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+   color: #7C8493;
+}
+
+.featured .d2 {
+   display: flex;
+   gap: .5em;
+}
+
+.d2 p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 33.4px;
+   text-align: left;
+   background-color: #EB85331A;
+   border-radius: 80px;
+   padding: 9px 20px;
+}
+
+.d2 p:last-child {
+   background-color: #56CDAD1A;
+}
+
+.boxes {
+   display: flex;
+   width: 100%;
+   justify-content: space-betwe
