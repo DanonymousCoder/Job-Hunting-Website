@@ -1682,6 +1682,7 @@ input::placeholder{
 
 .outputs .output {
    width: 80%;
+   padding-left: 4%;
 }
 
 .outputs .type {
@@ -1739,11 +1740,76 @@ li {
    align-items: center;
 }
 
+.output .tp .left {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.output .tp .left h4 {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 28.8px;
+   font-family: "ClashDisplay-Variable", sans-serif;
+   color: #25324B;
+}
+
+.output .tp .left p {
+   font-weight: 400;
+   font-size: 16px;
+   font-family: "Epilogue", sans-serif;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
 .output .tp .right {
+   display: flex;
+   gap: 2em;
+}
+
+.tp .right .sort-inner {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.tp .right .sort {
    display: flex;
    gap: .5em;
 }
 
+.tp .sort .light {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   text-align: right;
+   color: #7C8493;
+}
+
+.tp .sort p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.tp .sort i {
+   font-size: 17px;
+   color: #4640DE;
+}
+
+.tp .right .img {
+   display: flex;
+   gap: 1em;
+}
+
+.apply {
+   background-color: #FFFFFF;
+   border: 1px solid #D6DDEB;
+   padding: 24px;
+}
 
 /*
    DARK MODE
