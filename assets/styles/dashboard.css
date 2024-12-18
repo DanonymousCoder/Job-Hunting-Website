@@ -1667,6 +1667,59 @@ input::placeholder{
    text-align: left;
 }
 
+.outputs {
+   display: flex;
+   align-items: flex-start;
+   width: 90%;
+}
+
+.outputs .side {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.outputs .output {
+   width: 80%;
+}
+
+.type p {
+   color: #25324B;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 25.6px;
+   font-family: "Epilogue", sans-serif;
+}
+
+.type .titl {
+   display: flex;
+}
+
+li {
+   list-style: none;
+}
+
+.outputs ul {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.outputs li {
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.type li p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #515B6F;
+}
+
 
 /*
    DARK MODE
@@ -1703,180 +1756,6 @@ input::placeholder{
 /*
    toy
 */
-main {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 5em;
-   padding-top: 50px;
-   position: relative;
-}
-
-.illustr1 {
-   position: absolute;
-   top: -150px;
-   right: 0;
-   height: 200px;
-   width: 30%;
-}
-
-main .help {
-   width: 80%;
-   display: flex;
-   flex-direction: column;
-   gap: 1.3em;
-}
-
-.help p.head {
-   font-family: "Epilogue", sans-serif;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 28.8px;
-   text-align: left;
-   color: #202430;
-}
-
-.help p {
-   font-family: "Epilogue", sans-serif;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 28.8px;
-   text-align: left;
-   color: #202430;
-}
-
-.help .companies {
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-}
-
-.help .companies img {
-   width: auto;
-   height: 25px;
-}
-
-.explore {
-   width: 80%;
-   display: flex;
-   flex-direction: column;
-   gap: 2em;
-   justify-content: center;
-   align-items: center;
-}
-
-.head {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-}
-
-.head h2 {
-   font-family: "ClashDisplay-Variable", sans-serif;
-   font-size: 48px;
-   font-weight: 600;
-   line-height: 53px;
-   text-align: left;
-   color: #26A4FF;
-}
-
-.head p {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: .5em;
-   font-family: "Epilogue", sans-serif;
-   font-size: 16px;
-   font-weight: 600;
-   line-height: 26px;
-   color: #4640DE;
-}
-
-.explore .boxes {
-   display: flex;
-   flex-direction: column;
-   gap: 2em;
-   width: 100%;
-}
-
-.explore .boxes .row {
-   display: flex;
-   width: 100%;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-.explore .box {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 1em;
-   border: 1px solid #D6DDEB;
-   background-color: #FFFFFF;
-   height: 214px;
-   width: 23%;
-   padding-left: 2%;
-}
-
-.explore .box.hover {
-   background-color: #4640DE;
-   color: white !important;
-}
-
-.explore .box.hover .sub {
-   color: #FFFFFF;
-   font-family: "Epilogue", sans-serif;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 28.8px;
-   text-align: left;
-}
-
-.box p {
-   font-family: "ClaashDisplay-Variable", sans-serif;
-   font-size: 22px;
-   font-weight: 600;
-   line-height: 28.8px;
-   text-align: left;
-}
-
-.explore .box .sub {
-   display: flex;
-   gap: .5em;
-   align-items: center;
-   justify-content: center;
-   color: #7C8493;
-   font-family: "Epilogue", sans-serif;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 28.8px;
-   text-align: left;
-}
-
-.cta {
-   width: 80%;
-   background-color: #4640DE;
-   clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 30px 50px;
-   height: 414px;
-   margin-bottom: 100px;
-}
-
-.left {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   gap: 1em;
-   padding-left: 40px;
-}
-
 
 .cta .left h2 {
    font-family: "ClasjDisplay-Variable", sans-serif;
@@ -1952,12 +1831,4 @@ main .help {
    justify-content: center;
    align-items: center;
    gap: .4em;
-}
-
-.d1 .loc p {
-   font-family: "Epilogue", sans-serif;
-   font-size: 12px;
-   font-weight: 400;
-   line-height: 25.6px;
-   text-align: left;
 }
