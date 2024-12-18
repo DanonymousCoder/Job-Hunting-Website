@@ -1457,33 +1457,33 @@ input::placeholder{
    background-color: #F8F8FD;
 }
 
-.application .pagination {
+.pagination {
    display: flex;
    justify-self: center;
    align-items: center;
    gap: .5em;
 }
 
-.application .pagination i {
+.pagination i {
    font-size: 24px;
    color: #25324B;
 }
 
-.application .pagination i.fir {
+.pagination i.fir {
    opacity: 50%;
 }
 
-.application .pagination .num {
+.pagination .num {
    display: flex;
    gap: .3em;
    align-items: center;
 }
 
-.application .num div {
+.num div {
    padding: 10px 12px;
 }
 
-.application .num p{
+.num p{
    font-family: "Inter", sans-serif;
    font-size: 16px;
    font-weight: 600;
@@ -1492,14 +1492,14 @@ input::placeholder{
    color: #515B6F;
 }
 
-.application .on-page {
+.on-page {
    background-color: #4640DE;
    border-radius: 8px;
    width: 46px;
    height: 46px;
 }
 
-.application .on-page p {
+.on-page p {
    color: #FFFFFF;
 }
 
@@ -1808,6 +1808,9 @@ li {
 .applies {
    width: 100%;
    margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
 }
 
 .apply {
