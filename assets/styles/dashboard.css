@@ -1807,6 +1807,7 @@ li {
 
 .applies {
    width: 100%;
+   margin-top: 20px;
 }
 
 .apply {
@@ -1854,13 +1855,92 @@ li {
 
 .apply .yaps .label {
    display: flex;
-   gap: .5em;
+   gap: .7em;
+}
+
+.yaps .label .full {
+   background-color: #56CDAD1A;
+   color: #56CDAD;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   border-radius: 80px;
+   height: 34px;
+   width: 83px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 22.4px;
+}
+
+.yaps .label  hr {
+   border: 1px solid #D6DDEB;
+}
+
+.yaps .label .mark {
+   border: 1px solid #FFB836;
+   color: #FFB836;
+   padding: 6px 10px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22.4px;
+   border-radius: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.yaps .label .des {
+   border: 1px solid #4640DE;
+   color: #4640DE;
+   padding: 6px 10px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22.4px;
+   border-radius: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .buttons {
    display: flex;
    flex-direction: column;
-   gap: .5em;
+   gap: 1em;
+}
+
+.buttons a {
+   background-color: #4640DE;
+   padding: 12px 24px;
+   color: #FFFFFF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 25.6px;
+   text-align: center;
+}
+
+.buttons p {
+   font-weight: 600;
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   line-height: 22.4px;
+   text-align: center;
+   color: #000000;
+}
+
+.buttons p span {
+   font-weight: 400;
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   line-height: 22.4px;
+   text-align: center;
+   color: #7C8493;
 }
 
 /*
