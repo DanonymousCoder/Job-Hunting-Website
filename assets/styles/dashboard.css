@@ -1805,10 +1805,62 @@ li {
    gap: 1em;
 }
 
+.applies {
+   width: 100%;
+}
+
 .apply {
    background-color: #FFFFFF;
    border: 1px solid #D6DDEB;
    padding: 24px;
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.apply .comp-info {
+   display: flex;
+   align-items: flex-start;
+   gap: 1em;
+}
+
+.apply .yaps {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.apply .yaps h2{
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   color: #25324B;
+}
+
+.apply .yaps .locate {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.apply .yaps .locate p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #7C8493;
+}
+
+.apply .yaps .label {
+   display: flex;
+   gap: .5em;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
 }
 
 /*
