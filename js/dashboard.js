@@ -8,6 +8,8 @@ let messagesTab = document.getElementById("messages-tab");
 let dashTab = document.getElementById("dashboard");
 let app = document.getElementById("applications");
 let appTab = document.getElementById("app-tab");
+let find = document.getElementById("find");
+let findTab = document.getElementById("find-tab");
 
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
@@ -42,6 +44,17 @@ app.addEventListener("click",() => {
   dashTab.classList.remove("active2");
   appTab.classList.add("active2");
 } )
+
+find.addEventListener("click", () => {
+  messages.classList.remove("active");
+  dashBoard.classList.remove("active");
+  app.classList.remove("active");
+
+  messagesTab.classList.remove("active2");
+  dashTab.classList.remove("active2");
+  appTab.classList.remove("active2");
+  findTab.classList.add("active2")
+})
 
 
 defDisplay.addEventListener("click", showDate);
