@@ -1877,28 +1877,11 @@ main .help {
    padding-left: 40px;
 }
 
-.right {
-   width: 50%;
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-   position: relative;
-   z-index: -1;
-}
 
 .cta .left h2 {
    font-family: "ClasjDisplay-Variable", sans-serif;
    font-size: 48px;
    font-weight: 600;
-   line-height: 52.8px;
-   text-align: left;
-   color: #FFFFFF;
-}
-
-.left p {
-   font-family: "Epilogue", sans-serif;
-   font-size: 16px;
-   font-weight: 500;
    line-height: 52.8px;
    text-align: left;
    color: #FFFFFF;
@@ -1919,16 +1902,6 @@ main .help {
 .cta .right {
    width: 50%;
    position: relative;
-}
-
-.right img {
-   position: absolute;
-   bottom: -207px;
-   object-position: center;
-   height: 344px;
-   width: 100%;
-   right: 20px;
-   z-index: 100;
 }
 
 .featured {
@@ -1987,33 +1960,4 @@ main .help {
    font-weight: 400;
    line-height: 25.6px;
    text-align: left;
-}
-
-.featured p.sub {
-   font-family: "Inter", sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 26px;
-   text-align: left;
-   color: #7C8493;
-}
-
-.featured .d2 {
-   display: flex;
-   gap: .5em;
-}
-
-.d2 p {
-   font-family: "Epilogue", sans-serif;
-   font-size: 14px;
-   font-weight: 600;
-   line-height: 33.4px;
-   text-align: left;
-   background-color: #EB85331A;
-   border-radius: 80px;
-   padding: 9px 20px;
-}
-
-.d2 p:last-child {
-   background-color: #56CDAD1A;
 }
