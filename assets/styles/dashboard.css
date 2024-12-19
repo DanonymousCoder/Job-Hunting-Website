@@ -1890,7 +1890,7 @@ li {
    border: 1px solid #D6DDEB;
 }
 
-.yaps .label .mark {
+.find  .mark {
    border: 1px solid #FFB836;
    color: #FFB836;
    padding: 6px 10px;
@@ -1904,7 +1904,7 @@ li {
    align-items: center;
 }
 
-.yaps .label .des {
+.find .des {
    border: 1px solid #4640DE;
    color: #4640DE;
    padding: 6px 10px;
@@ -1968,13 +1968,15 @@ li {
 .applies-box {
       grid-template-columns: repeat(3, 1fr);
       gap: 1em;
+      margin-top: 20px;
 }
 
 .applies-box .box {
    display: flex;
    flex-direction: column;
+   gap: .7em;
    border: 1px solid #D6DDEB;
-   padding: 10px;
+   padding: 24px;
 }
 
 .applies-box .box .head {
@@ -1982,15 +1984,28 @@ li {
    align-items: center;
 }
 
-.applies-box button {
-   width: auto;
+.content main .applies-box button {
+   max-width: 93px;
+   height: 34px;
    background-color: #56CDAD1A;
    color: #56CDAD;
-   width: 83px;
    font-size: 14px;
    font-weight: 600;
    font-family: "Epilogue", sans-serif;
    line-height: 22.4px;
+   padding: 7px 10px;
+   border-radius: 80px;
+}
+
+.content main .applies-box .box:nth-child(4) button {
+   background-color: #FF65501A;
+   color: #FF6550;
+}
+
+.applies-box .box  .down {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
 }
 
 .applies-box p {
@@ -2022,118 +2037,47 @@ li {
 
 .applies-box .d2 p {
    font-weight: 400;
+   line-height: 22.4px;
+   font-size: 14px;
+   text-align: left;
+   font-family: "Epilogue", sans-serif;
 }
 
+.biz {
+   color: #56CDAD !important;
+   border: 1px solid #56CDAD;
+   padding: 6px 10px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22.4px;
+   border-radius: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
-
-
-.applies-box .box {
+.applies-box .stats {
    display: flex;
    flex-direction: column;
-   border: 1px solid #D6DDEB;
+   gap: .5em;
 }
 
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
+.applies-box .stats p {
+   font-size: 14px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   line-height: 22.4px;
+   color: #000000;
 }
 
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
+
+.applies-box .stats p span {
+   color: #25324B;
+   font-weight: 400;
 }
 
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
 
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
 
 .applies-box .box {
    display: flex;
@@ -2153,38 +2097,6 @@ li {
    flex-direction: column;
    border: 1px solid #D6DDEB;
 }.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid #D6DDEB;
-}
-
-.applies-box .box {
    display: flex;
    flex-direction: column;
    border: 1px solid #D6DDEB;
