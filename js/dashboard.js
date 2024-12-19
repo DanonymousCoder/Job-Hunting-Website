@@ -15,6 +15,9 @@ let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
 let lightTog = document.getElementById("icon");
 
+let sptBt = document.getElementById("spt-bt");
+let deftBt = document.getElementById("dft-bt");
+
 darkTog.addEventListener("click", darkInit);
 
  messages.addEventListener("click",() => {

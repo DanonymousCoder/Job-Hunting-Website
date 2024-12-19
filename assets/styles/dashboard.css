@@ -1667,9 +1667,17 @@ input::placeholder{
    text-align: left;
 }
 
+.outputs-cont {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
 .outputs {
    display: flex;
    align-items: flex-start;
+   justify-content: center;
    width: 90%;
 }
 
@@ -1946,6 +1954,10 @@ li {
    color: #7C8493;
 }
 
+.outputs .spt {
+   display: none;
+}
+
 /*
    DARK MODE
 */
@@ -1971,96 +1983,4 @@ li {
 .container.dark nav .bottom p,
 .container.dark nav .bottom p#fulname   {
    color: #FFFFFF;
-}
-
-
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-Remember, the exact key might be revealed in Clue #2, so keep your thinking caps on! Clue #2 
-
-Remember, the exact key might be revealed in Clue #2, so keep your thinking caps on! Clue #2 
-
-Remember, the exact key might be revealed in Clue #2, so keep your thinking caps on! Clue #2 
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
-}
-
-.apply .comp-info {
-   display: flex;
-   align-items: flex-start;
-   gap: 1em;
 }
