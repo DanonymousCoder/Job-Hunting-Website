@@ -165,7 +165,7 @@ parentTabs.forEach(tab => {
   })
 
 sptBt.addEventListener("click", () => {
-  spt.style.display = "flex";
+  spt.style.display = "grid";
   deft.style.display = "none";
 
   sptBt.src = "../assets/images/View-active.png";
