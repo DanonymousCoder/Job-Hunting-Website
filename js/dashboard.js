@@ -18,6 +18,9 @@ let lightTog = document.getElementById("icon");
 let sptBt = document.getElementById("spt-bt");
 let deftBt = document.getElementById("dft-bt");
 
+let spt = document.getElementById("spt");
+let deft = document.getElementById("deft");
+
 darkTog.addEventListener("click", darkInit);
 
  messages.addEventListener("click",() => {
@@ -152,3 +155,19 @@ const parentTabs = document.querySelectorAll('.content > main');
 parentTabs.forEach(tab => {
   tab.classList.add
 }) */
+
+  deftBt.addEventListener("click", () => {
+    spt.style.display = "none";
+    deft.style.display = "flex";
+  
+    sptBt.src = "../assets/images/View.png";
+    deftBt.src = "../assets/images/View2.png";
+  })
+
+sptBt.addEventListener("click", () => {
+  spt.style.display = "flex";
+  deft.style.display = "none";
+
+  sptBt.src = "../assets/images/View-active.png";
+  deftBt.src = "../assets/images/View2-non.png";
+})

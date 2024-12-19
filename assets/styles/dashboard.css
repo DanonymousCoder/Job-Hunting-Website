@@ -1553,12 +1553,13 @@ input::placeholder{
    position: absolute;
    top: 20px;
    left: 15px;
+   color: #25324B;
 }
 
 .find .key input,
 .find .location select {
    border: none;
-   border-bottom: 1px solid;
+   border-bottom: 1px solid #D6DDEB;
    padding-bottom: 1em;
    width: 100%;
 }
@@ -1600,6 +1601,7 @@ input::placeholder{
 .find .sch,
 .find .loc {
     font-size: 30px;
+    color: #25324B;
 }
 
 .find .location {
@@ -1956,7 +1958,39 @@ li {
 
 .outputs .spt {
    display: none;
+   flex-direction: column;
 }
+
+.outputs .spt,
+.outputs .deft {
+   cursor: pointer;
+} 
+
+.applies-box {
+   display: flex;
+   gap: .5em;
+}
+
+.applies-box {
+   display: flex;
+   gap: .5em;
+}
+
+.applies-box {
+   display: flex;
+   gap: .5em;
+}
+
+.applies-box {
+   display: flex;
+   gap: .5em;
+}
+
+.applies-box {
+   display: flex;
+   gap: .5em;
+}
+
 
 /*
    DARK MODE
