@@ -2073,6 +2073,67 @@ li {
 }
 
 
+.applies-box .stats p span {
+   color: #25324B;
+   font-weight: 400;
+}
+
+.app-details .job {
+   width: 90%;
+   background-color: #F8F8FD;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 240px;
+}
+
+.app-details .card {
+   width: 90%;
+   background-color: #FFFFFF;
+   border: 1px solid #D6DDEB;
+   display: flex;
+   padding: 24px;
+   justify-content: space-between;
+}
+
+.app-details .card .left {
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.app-details .left .tets {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.app-details .left .loc {
+   display: flex;
+   align-items: center;
+   gap: .5em;
+}
+
+.loc p {
+   color: #515B6F;
+   font-family: "Epilogue", sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 32px;
+}
+
+.app-details .card .right img {
+   border-right: 1px solid #D6DDEB;
+   padding-right: 30px;
+}
+
+.app-details .card .right a {
+   background-color: #4640DE;
+   border: none;
+   padding: 14px 56px;
+   color: #FFFFFF;
+}
+
 
 /*
    DARK MODE
