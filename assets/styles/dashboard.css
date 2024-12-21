@@ -2154,6 +2154,7 @@ li {
    gap: 1em;
    width: 100%;
    align-items: flex-end;
+   border-bottom: 1px solid #D6DDEB;
 }
 
 .middle .nom h4 {
@@ -2164,8 +2165,6 @@ li {
    text-align: center;
    width: 80%;
 }
-
-
 
 .middle .nom .stats {
    background-color: #F8F8FD;

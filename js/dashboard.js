@@ -3,6 +3,7 @@ let updDate = document.getElementById("update-date");
 
 let dashBoard = document.getElementById("dashb");
 let messages = document.getElementById("message");
+let browse = document.getElementById("browse");
 
 let messagesTab = document.getElementById("messages-tab");
 let dashTab = document.getElementById("dashboard");
@@ -10,6 +11,7 @@ let app = document.getElementById("applications");
 let appTab = document.getElementById("app-tab");
 let find = document.getElementById("find");
 let findTab = document.getElementById("find-tab");
+let browseTab = document.getElementById("browse-tab");
 
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
@@ -45,21 +47,32 @@ app.addEventListener("click",() => {
   messages.classList.remove("active");
   dashBoard.classList.remove("active");
   app.classList.add("active");
+  browse.classList.remove("active");
 
   messagesTab.classList.remove("active2");
   dashTab.classList.remove("active2");
   appTab.classList.add("active2");
+  browse.classList.remove("active2")
 } )
 
 find.addEventListener("click", () => {
   messages.classList.remove("active");
   dashBoard.classList.remove("active");
   app.classList.remove("active");
+  browse.classList.remove
 
   messagesTab.classList.remove("active2");
   dashTab.classList.remove("active2");
   appTab.classList.remove("active2");
   findTab.classList.add("active2")
+})
+
+/*
+
+*/
+
+browse.addEventListener("click", () => {
+
 })
 
 
