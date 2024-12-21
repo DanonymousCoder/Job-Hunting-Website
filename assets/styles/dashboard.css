@@ -2138,6 +2138,8 @@ li {
    width: 90%;
    display: flex;
    flex-direction: row-reverse;
+   padding-bottom: 30px;
+   border-bottom: 1px solid #D6DDEB;
 }
 
 .middle .nom {
@@ -2164,7 +2166,7 @@ li {
    font-size: 24px;
    font-weight: 600;
    line-height: 28.8px;
-   text-align: center;
+   text-align: left;
    width: 100%;
 }
 
@@ -2223,25 +2225,59 @@ li {
 
 .middle .aside {
    width: 77%;
-   background-color: yellow;
 }
 
 .middle .nom .sec2 {
    display: flex;
    flex-direction: column;
    gap: 1em;
+   padding-bottom: 30px;
+   border-bottom: 1px solid #D6DDEB;
+   width: 100%;
 }
 
-.middle .nom .sec2 .labes {
+.middle .nom .labes {
    display: flex;
-   gap: .5em;
+   flex-wrap: wrap;
+   gap: .6em;
 }
 
 p.mark-f {
    background-color: #EB85331A;
-   color: #EB8533;
-   padding: 6px 10px;
+   color: #FFB836;
+   padding: 10px;
    border-radius: 80px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22.4px;
+}
+
+p.des-f {
+   background-color: #56CDAD1A;
+   color: #56CDAD;
+   border-radius: 80px;
+   padding: 10px;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 22.4px;
+}
+
+.middle .nom .sec3 {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.sec3 p {
+   background-color: #F8F8FD;
+   padding: 4px 12px;
+   font-family: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #4640DE;
+   font-family: "Epilogue", sans-serif;
 }
 
 
