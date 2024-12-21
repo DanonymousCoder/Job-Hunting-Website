@@ -59,7 +59,7 @@ find.addEventListener("click", () => {
   messages.classList.remove("active");
   dashBoard.classList.remove("active");
   app.classList.remove("active");
-  browse.classList.remove
+  browse.classList.remove("active")
 
   messagesTab.classList.remove("active2");
   dashTab.classList.remove("active2");
@@ -68,12 +68,18 @@ find.addEventListener("click", () => {
 })
 
 /*
+  browse.addEventListener("click", () => {
+  messages.classList.remove("active");
+  dashBoard.classList.remove("active");
+  app.classList.remove("active");
+  browse.classList.add("active");
 
-*/
-
-browse.addEventListener("click", () => {
-
+  messagesTab.classList.remove("active2");
+  dashTab.classList.remove("active2");
+  appTab.classList.remove("active2");
+  findTab.classList.add("active2")
 })
+*/
 
 
 defDisplay.addEventListener("click", showDate);
