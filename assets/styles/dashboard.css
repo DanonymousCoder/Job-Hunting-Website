@@ -2141,11 +2141,12 @@ li {
 }
 
 .middle .nom {
-   width: 30%;
+   width: 23%;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-end;
+   gap: 2em;
 }
 
 .middle .nom .sec1 {
@@ -2155,6 +2156,7 @@ li {
    width: 100%;
    align-items: flex-end;
    border-bottom: 1px solid #D6DDEB;
+   padding-bottom: 30px;
 }
 
 .middle .nom h4 {
@@ -2163,7 +2165,7 @@ li {
    font-weight: 600;
    line-height: 28.8px;
    text-align: center;
-   width: 80%;
+   width: 100%;
 }
 
 .middle .nom .stats {
@@ -2172,7 +2174,7 @@ li {
    display: flex;
    flex-direction: column;
    gap: .5em;
-   width: 80%;
+   width: 100%;
 }
 
 .middle .nom .stats p {
@@ -2199,7 +2201,7 @@ li {
 
 .tablea .app-bf {
    display: flex;
-   width: 80%;
+   width: 100%;
    justify-content: space-between;
 }
 
@@ -2220,7 +2222,26 @@ li {
 }
 
 .middle .aside {
-   width: 70%;
+   width: 77%;
+   background-color: yellow;
+}
+
+.middle .nom .sec2 {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.middle .nom .sec2 .labes {
+   display: flex;
+   gap: .5em;
+}
+
+p.mark-f {
+   background-color: #EB85331A;
+   color: #EB8533;
+   padding: 6px 10px;
+   border-radius: 80px;
 }
 
 
