@@ -2483,6 +2483,38 @@ p.des-f {
    gap: .5em;
 }
 
+.browse .search {
+   width: 90%;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 6.86px 11.12px 0px #C0C0C00A;
+    box-shadow: 0px 14px 22.68px 0px #C0C0C00C;
+    box-shadow: 0px 28.84px 46.72px 0px #C0C0C00F;
+    box-shadow: 0px 79px 128px 0px #C0C0C017;
+    padding: 20px;
+    border: 1px solid #D6DDEB;
+}
+
+.find .search .key {
+   display: flex;
+   gap: 1em;
+   width: 40%;
+   position: relative;
+   padding: 0 50px 0 0;
+   border-right: 1px solid #D6DDEB;
+}
+
+.find .search .key i {
+   position: absolute;
+   top: 20px;
+   left: 15px;
+   color: #25324B;
+}
+
 
 /*
    DARK MODE
