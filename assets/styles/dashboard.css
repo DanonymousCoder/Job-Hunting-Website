@@ -2392,6 +2392,26 @@ p.des-f {
    color: #515B6F;
 }
 
+.foot {
+   display: flex;
+   gap: .5em;
+}
+
+.foot .left {
+   display: flex;
+}
+
+.foot .left .top {
+   display: flex;
+   align-items: center;
+}
+
+.foot .left .top .text {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
 
 /*
    DARK MODE
