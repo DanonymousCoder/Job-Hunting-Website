@@ -2078,6 +2078,19 @@ li {
    font-weight: 400;
 }
 
+.app-details .cont .head{
+   align-items: center;
+}
+
+.app-details .cont .head .title {
+   display: flex;
+   gap: .5em;
+}
+
+.app-details .cont .head .title i {
+   font-size: 40px;
+}
+
 .app-details .job {
    width: 90%;
    background-color: #F8F8FD;
