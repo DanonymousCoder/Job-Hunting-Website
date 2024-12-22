@@ -2393,20 +2393,78 @@ p.des-f {
 }
 
 .foot {
+   width: 90%;
    display: flex;
+   justify-content: space-between;
    gap: .5em;
+   margin-top: 30px;
 }
 
 .foot .left {
    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1em;
+   width: 50%;
 }
 
 .foot .left .top {
    display: flex;
    align-items: center;
+   gap: 1em;
+}
+
+.foot .left .bottom p {
+   font-family: "Epilogue", sans-serif;
+   color: #515B6F;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
 }
 
 .foot .left .top .text {
+   display: flex;
+   flex-direction: column;
+   gap: .5em;
+}
+
+.foot .left .top h3 {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 38.4px;
+   color: #25324B;
+}
+
+.foot .left .link {
+   display: flex;
+   gap: .5em;
+   color: #4640DE;
+}
+
+.foot .left .link p {
+   color: inherit;
+   font-family: "Epilogue", sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 25.6px;
+   text-align: left;
+}
+
+.foot .left .link i {
+   color: inherit;
+   font-size: 24px;
+}
+
+.foot .right {
+   display: flex;
+   gap: .5em;
+   width: 50%;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.foot .right .db-img {
    display: flex;
    flex-direction: column;
    gap: .5em;
