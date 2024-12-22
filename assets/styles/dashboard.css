@@ -2499,7 +2499,7 @@ p.des-f {
     border: 1px solid #D6DDEB;
 }
 
-.find .search .key {
+.browse .search .key {
    display: flex;
    gap: 1em;
    width: 40%;
@@ -2541,6 +2541,25 @@ p.des-f {
    line-height: 26px;
    text-align: center;
    max-width: 30%;
+}
+
+.browse .have-bg {
+   background-color: #4640DE;
+   color: #FFFFFF;
+}
+
+.browse .sch,
+.browse .loc {
+   font-size: 30px;
+   color: #25324B;
+}
+
+.browse .location {
+   display: flex;
+   gap: .5em;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
 }
 
 
