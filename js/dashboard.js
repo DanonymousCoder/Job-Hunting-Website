@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function darkInit() {
-  
+  cont.classList.toggle("dark");
 
   // Toggle the icon between moon and sun
   if (lightTog.classList.contains("bx-moon")) {

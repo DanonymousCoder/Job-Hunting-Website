@@ -2492,6 +2492,10 @@ p.des-f {
    background-color: #202430;
 }
 
+.container.dark nav {
+   background-color: #202430;
+}
+
 .container.dark nav .logo {
    color: #FFFFFF;
 }
