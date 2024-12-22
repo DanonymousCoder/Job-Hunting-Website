@@ -2140,6 +2140,8 @@ li {
    flex-direction: row-reverse;
    padding-bottom: 30px;
    border-bottom: 1px solid #D6DDEB;
+   margin-top: 40px;
+   gap: 1em;
 }
 
 .middle .nom {
@@ -2223,10 +2225,6 @@ li {
    color: #25324B;
 }
 
-.middle .aside {
-   width: 77%;
-}
-
 .middle .nom .sec2 {
    display: flex;
    flex-direction: column;
@@ -2278,6 +2276,23 @@ p.des-f {
    line-height: 25.6px;
    color: #4640DE;
    font-family: "Epilogue", sans-serif;
+}
+
+.middle .aside {
+   width: 77%;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.middle .aside .infor {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.middle .aside .fle {
+   display: flex;
 }
 
 
