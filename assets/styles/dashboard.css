@@ -2508,11 +2508,39 @@ p.des-f {
    border-right: 1px solid #D6DDEB;
 }
 
-.find .search .key i {
+.browse .search .key i {
    position: absolute;
    top: 20px;
    left: 15px;
    color: #25324B;
+}
+
+.browse .key input,
+.browse .location select {
+   border: none;
+   border-bottom: 1px solid #D6DDEB;
+   padding-bottom: 1em;
+   width: 100%;
+}
+
+.browse .key input:focus {
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #D6DDEB;
+}
+
+.browse button {
+   color: #4640DE;
+   border: none;
+   background: transparent;
+   outline: none;
+   padding: 12px 24px;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 26px;
+   text-align: center;
+   max-width: 30%;
 }
 
 
