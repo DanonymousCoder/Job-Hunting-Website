@@ -1659,7 +1659,7 @@ input::placeholder{
    font-weight: 600;
    line-height: 25.6px;
    text-align: left;
-   color: #202430;
+   color: #515B6F;
 }
 
 .find .search-box p span {
@@ -2483,7 +2483,15 @@ p.des-f {
    gap: .5em;
 }
 
-.browse .search {
+.browse-tab {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.browse-tab .search {
    width: 90%;
    background-color: white;
    display: flex;
@@ -2499,7 +2507,7 @@ p.des-f {
     border: 1px solid #D6DDEB;
 }
 
-.browse .search .key {
+.browse-tab .search .key {
    display: flex;
    gap: 1em;
    width: 40%;
@@ -2508,28 +2516,28 @@ p.des-f {
    border-right: 1px solid #D6DDEB;
 }
 
-.browse .search .key i {
+.browse-tab .search .key i {
    position: absolute;
    top: 20px;
    left: 15px;
    color: #25324B;
 }
 
-.browse .key input,
-.browse .location select {
+.browse-tab .key input,
+.browse-tab .location select {
    border: none;
    border-bottom: 1px solid #D6DDEB;
    padding-bottom: 1em;
    width: 100%;
 }
 
-.browse .key input:focus {
+.browse-tab .key input:focus {
    border: none;
    outline: none;
    border-bottom: 1px solid #D6DDEB;
 }
 
-.browse button {
+.browse-tab button {
    color: #4640DE;
    border: none;
    background: transparent;
@@ -2543,18 +2551,18 @@ p.des-f {
    max-width: 30%;
 }
 
-.browse .have-bg {
+.browse-tab .have-bg {
    background-color: #4640DE;
    color: #FFFFFF;
 }
 
-.browse .sch,
-.browse .loc {
+.browse-tab .sch,
+.browse-tab .loc {
    font-size: 30px;
    color: #25324B;
 }
 
-.browse .location {
+.browse-tab .location {
    display: flex;
    gap: .5em;
    justify-content: center;
@@ -2562,6 +2570,31 @@ p.des-f {
    width: 40%;
 }
 
+.browse-tab .search-box p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   text-align: left;
+   font-weight: 600;
+   line-height: 25.6px;
+   color: #515B6F;
+}
+
+.browse-main {
+   width: 90%;
+   display: flex;
+   justify-self: center;
+   height: 100vh;
+   gap: 2em;
+}
+
+.aside-browse {
+   width: 20%;
+}
+
+.browse-comp {
+   width: 78%;
+   background-color: #56CDAD;
+}
 
 /*
    DARK MODE
