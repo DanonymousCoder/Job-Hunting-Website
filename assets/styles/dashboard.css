@@ -2650,6 +2650,7 @@ p.des-f {
    width: 78%;
    display: flex;
    flex-direction: column;
+   gap: 2em;
 }
 
 .browse-comp .top {
@@ -2728,6 +2729,51 @@ p.des-f {
    display: flex;
    align-items: center;
    gap: 1em;
+}
+
+.browse-comp .bottom {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2em;
+}
+
+.browse-comp .bottom .box {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   padding: 24px;
+   border: 1px solid #D6DDEB;
+}
+
+.browse-comp .box .top{
+   display: flex;
+   align-items: flex-start;
+}
+
+.browse-comp .box .top p {
+   padding: 4px 12px;
+   background-color: #F8F8FD;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   color: #4640DE;
+}
+
+.browse-comp .box .top .comp {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.browse-comp .box .top .comp p {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 28.8px;
+   color: #25324B;
+   background-color: transparent;
+   padding: 0;
 }
 
 
