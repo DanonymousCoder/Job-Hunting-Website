@@ -2489,6 +2489,7 @@ p.des-f {
    align-items: center;
    justify-content: center;
    width: 100%;
+   padding-bottom: 30px;
 }
 
 .browse-tab .search {
@@ -2764,6 +2765,7 @@ p.des-f {
    display: flex;
    flex-direction: column;
    gap: 1em;
+   align-items: flex-start;
 }
 
 .browse-comp .box .top .comp p {
@@ -2774,6 +2776,36 @@ p.des-f {
    color: #25324B;
    background-color: transparent;
    padding: 0;
+}
+
+.browse-comp .box p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 28.8px;
+}
+
+.browse-comp .ovals {
+   display: flex;
+   gap: 1em;
+}
+
+.pay {
+   background-color: #4640DE1A;
+   color: #4640DE !important;
+   border: none;
+   padding: 6px 12px;
+}
+
+.block {
+   border: 1px solid #FFB836;
+   color: #FFB836 !important;
+}
+
+.browse-comp .pagination {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 10px;
 }
 
 
