@@ -2595,11 +2595,6 @@ p.des-f {
    gap: 2em;
 }
 
-.browse-comp {
-   width: 78%;
-   background-color: #56CDAD;
-}
-
 .industr {
    display: flex;
    flex-direction: column;
@@ -2649,6 +2644,90 @@ p.des-f {
    font-size: 16px;
    line-height: 25.6px;
    color: #515B6F;
+}
+
+.browse-comp {
+   width: 78%;
+   display: flex;
+   flex-direction: column;
+}
+
+.browse-comp .top {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.browse-comp .top .heads {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: .5em;
+}
+
+.browse-comp .top .heads h3 {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 38.4px;
+   color: #25324B;
+}
+
+.browse-comp .top .heads p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.browse-comp .other {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.browse-comp .other .rele {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.browse-comp .other .sort p:first-child {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   line-height: 25.6px;
+   font-weight: 400;
+   display: flex;
+   gap: .5em;
+   color: #7C8493;
+}
+
+.browse-comp .other .sort .relev {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.browse-comp .other .sort .relev-i {
+   font-size: 18px;
+   color: #4640DE;
+   padding-right: 20px;
+   border-right: 1px solid #D6DDEB;
+}
+
+.browse-comp .other .sort {
+   display: flex;
+   align-items: center;
+}
+
+.browse-comp .other .imgs {
+   display: flex;
+   align-items: center;
+   gap: 1em;
 }
 
 
