@@ -1659,7 +1659,7 @@ input::placeholder{
    font-weight: 600;
    line-height: 25.6px;
    text-align: left;
-   color: #202430;
+   color: #515B6F;
 }
 
 .find .search-box p span {
@@ -2483,6 +2483,335 @@ p.des-f {
    gap: .5em;
 }
 
+.browse-tab {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding-bottom: 30px;
+}
+
+.browse-tab .search {
+   width: 90%;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 2.71px 4.4px 0px #C0C0C007;
+   box-shadow: 0px 6.86px 11.12px 0px #C0C0C00A;
+    box-shadow: 0px 14px 22.68px 0px #C0C0C00C;
+    box-shadow: 0px 28.84px 46.72px 0px #C0C0C00F;
+    box-shadow: 0px 79px 128px 0px #C0C0C017;
+    padding: 20px;
+    border: 1px solid #D6DDEB;
+}
+
+.browse-tab .search .key {
+   display: flex;
+   gap: 1em;
+   width: 40%;
+   position: relative;
+   padding: 0 50px 0 0;
+   border-right: 1px solid #D6DDEB;
+}
+
+.browse-tab .search .key i {
+   position: absolute;
+   top: 20px;
+   left: 15px;
+   color: #25324B;
+}
+
+.browse-tab .key input,
+.browse-tab .location select {
+   border: none;
+   border-bottom: 1px solid #D6DDEB;
+   padding-bottom: 1em;
+   width: 100%;
+}
+
+.browse-tab .key input:focus {
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #D6DDEB;
+}
+
+.browse-tab button {
+   color: #4640DE;
+   border: none;
+   background: transparent;
+   outline: none;
+   padding: 12px 24px;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 26px;
+   text-align: center;
+   max-width: 30%;
+}
+
+.browse-tab .have-bg {
+   background-color: #4640DE;
+   color: #FFFFFF;
+}
+
+.browse-tab .sch,
+.browse-tab .loc {
+   font-size: 30px;
+   color: #25324B;
+}
+
+.browse-tab .location {
+   display: flex;
+   gap: .5em;
+   justify-content: center;
+   align-items: center;
+   width: 40%;
+}
+
+.browse-tab .search-box p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   text-align: left;
+   font-weight: 600;
+   line-height: 25.6px;
+   color: #515B6F;
+}
+
+.browse-main {
+   width: 90%;
+   display: flex;
+   justify-self: center;
+   height: 100vh;
+   gap: 2em;
+   margin-top: 30px;
+}
+
+.aside-browse {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.industr {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   align-items: flex-start;
+}
+
+.industr h4 {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #25324B;
+}
+
+.fle {
+   display: flex;
+   gap: 1em;
+   justify-content: flex-start;
+}
+
+.industr .fle p {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.size {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+}
+
+.size h4 {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   color: #25324B;
+}
+
+.size p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #515B6F;
+}
+
+.browse-comp {
+   width: 78%;
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.browse-comp .top {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.browse-comp .top .heads {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: .5em;
+}
+
+.browse-comp .top .heads h3 {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 38.4px;
+   color: #25324B;
+}
+
+.browse-comp .top .heads p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.browse-comp .other {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.browse-comp .other .rele {
+   display: flex;
+   gap: .5em;
+   align-items: center;
+}
+
+.browse-comp .other .sort p:first-child {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   line-height: 25.6px;
+   font-weight: 400;
+   display: flex;
+   gap: .5em;
+   color: #7C8493;
+}
+
+.browse-comp .other .sort .relev {
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 25.6px;
+   color: #25324B;
+}
+
+.browse-comp .other .sort .relev-i {
+   font-size: 18px;
+   color: #4640DE;
+   padding-right: 20px;
+   border-right: 1px solid #D6DDEB;
+}
+
+.browse-comp .other .sort {
+   display: flex;
+   align-items: center;
+}
+
+.browse-comp .other .imgs {
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.browse-comp .bottom {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2em;
+}
+
+.browse-comp .bottom .box {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   padding: 24px;
+   border: 1px solid #D6DDEB;
+}
+
+.browse-comp .box .top{
+   display: flex;
+   align-items: flex-start;
+}
+
+.browse-comp .box .top p {
+   padding: 4px 12px;
+   background-color: #F8F8FD;
+   font-family: "Epilogue", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 25.6px;
+   color: #4640DE;
+}
+
+.browse-comp .box .top .comp {
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   align-items: flex-start;
+}
+
+.browse-comp .box .top .comp p {
+   font-family: "ClashDisplay-Variable", sans-serif;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 28.8px;
+   color: #25324B;
+   background-color: transparent;
+   padding: 0;
+}
+
+.browse-comp .box p {
+   font-family: "Epilogue", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 28.8px;
+}
+
+.browse-comp .ovals {
+   display: flex;
+   gap: 1em;
+}
+
+.pay {
+   background-color: #4640DE1A;
+   color: #4640DE !important;
+   border: none;
+   padding: 6px 12px;
+}
+
+.block {
+   border: 1px solid #FFB836;
+   color: #FFB836 !important;
+}
+
+.browse-comp .pagination {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+
+.browse-tab {
+   display: none;
+}
 
 /*
    DARK MODE
