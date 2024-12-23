@@ -2809,8 +2809,9 @@ p.des-f {
 }
 
 
-
-
+.browse-tab {
+   display: none;
+}
 
 /*
    DARK MODE
