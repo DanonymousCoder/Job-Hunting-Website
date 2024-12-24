@@ -192,3 +192,33 @@ sptBt.addEventListener("click", () => {
   sptBt.src = "../assets/images/View-active.png";
   deftBt.src = "../assets/images/View2-non.png";
 })
+
+
+
+const steps = [
+  { text: "Click the first button to start!", elementId: "step-1" },
+  { text: "Now click the next button!", elementId: "step-2" },
+  { text: "Finish the tutorial by clicking here!", elementId: "step-3" },
+];
+
+let currentStep = 0;
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+const nextButton = document.getElementById("next-btn");
+
+const steps = [
+  {
+    text: "Scroll down to view the whole landing page.",
+    action: () => {
+      // Wait for user to scroll
+      return new Promise((resolve) => {
+        const onScroll = () => {
+          if (window.scrollY > window.innerHeight / 2) {
+            window.removeEventListener("scroll", onScroll);
+            resolve();
+          }
+        };
+        window.addEventListener("scroll", onScroll);
+      });
+    ]
