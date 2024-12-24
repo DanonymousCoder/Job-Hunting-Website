@@ -86,7 +86,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     let currentStep = 0;
-    const tutorialBox = document.getElementById("tutorial-box")
+    const tutorialBox = document.getElementById("tutorial-box");
+    const tutorialText = document.getElementById("tutorial-text");
+    const skipTutorialBtn = document.getElementById("skip-tutorial-btn");
+    const startTutorialBtn = document.getElementById("start-tutorial-btn");
+
+
+    // Start the tutorial
+
+    startTutorialBtn.addEventListener("click", () => {
+        currentStep = 0;
+        showStep();
+    })
   })
 
 
