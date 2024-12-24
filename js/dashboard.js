@@ -195,6 +195,7 @@ sptBt.addEventListener("click", () => {
 
 
 
+
 const steps = [
   { text: "Click the first button to start!", elementId: "step-1" },
   { text: "Now click the next button!", elementId: "step-2" },
@@ -204,4 +205,119 @@ const steps = [
 let currentStep = 0;
 
 const tutorialBox = document.getElementById("tutorial-box");
-const tutorialText = document.getElementById("tutorial-text")
+const tutorialText = document.getElementById("tutorial-text");
+
+const steps = [
+  { text: "Click the first button to start!", elementId: "step-1" },
+  { text: "Now click the next button!", elementId: "step-2" },
+  { text: "Finish the tutorial by clicking here!", elementId: "step-3" },
+];
+
+let currentStep = 0;
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const steps = [
+  { text: "Click the first button to start!", elementId: "step-1" },
+  { text: "Now click the next button!", elementId: "step-2" },
+  { text: "Finish the tutorial by clicking here!", elementId: "step-3" },
+];
+
+let currentStep = 0;
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const steps = [
+  { text: "Click the first button to start!", elementId: "step-1" },
+  { text: "Now click the next button!", elementId: "step-2" },
+  { text: "Finish the tutorial by clicking here!", elementId: "step-3" },
+];
+
+let currentStep = 0;
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const steps = [
+  { text: "Click the first button to start!", elementId: "step-1" },
+  { text: "Now click the next button!", elementId: "step-2" },
+  { text: "Finish the tutorial by clicking here!", elementId: "step-3" },
+];
+
+let currentStep = 0;
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");
+
+const tutorialBox = document.getElementById("tutorial-box");
+const tutorialText = document.getElementById("tutorial-text");

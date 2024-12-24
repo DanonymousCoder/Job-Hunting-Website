@@ -44,6 +44,33 @@ function logIn() {
     window.location.href = "/Job-Hunting-Website/pages/login.html";
 }
 
+
+
+/**
+ * Tutorial
+ */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const steps = [
+      {
+        text : "Scroll down to view the whole landing page.",
+        target : null,
+        action : () => {
+            return new Promise((resolve) => {
+                const onScroll = () => {
+                    if (window.scrollY > window.innerHeight / 2) {
+                        
+                    }
+                }
+            })
+        }
+      }
+    ]
+  })
+
+
+
+
 /*
 function goHome() {
     window.location.href = "../index.html";
