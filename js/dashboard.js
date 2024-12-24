@@ -221,4 +221,62 @@ const steps = [
         };
         window.addEventListener("scroll", onScroll);
       });
-    ]
+    },
+  },
+  {
+    text: "Now click the button to enable Dark Mode.",
+    action: () => {
+      const darkModeBtn = document.getElementById("darkmode-btn");
+      return new Promise((resolve) => {
+
+        const onClick = () => {
+          darkModeBtn.removeEventListener("click", onClick);
+          resolve();
+        };
+        darkModeBtn.addEventListener("click", onClick);
+      });
+    },
+  },
+];
+
+const onClick = () => {
+  darkModeBtn.removeEventListener("click", onClick);
+  resolve();
+};
+darkModeBtn.addEventListener("click", onClick);
+});
+},
+},
+];
+
+
+const onClick = () => {
+  darkModeBtn.removeEventListener("click", onClick);
+  resolve();
+};
+darkModeBtn.addEventListener("click", onClick);
+});
+},
+},
+];
+
+const onClick = () => {
+  darkModeBtn.removeEventListener("click", onClick);
+  resolve();
+};
+darkModeBtn.addEventListener("click", onClick);
+});
+},
+},
+];
+
+
+const onClick = () => {
+  darkModeBtn.removeEventListener("click", onClick);
+  resolve();
+};
+darkModeBtn.addEventListener("click", onClick);
+});
+},
+},
+];
