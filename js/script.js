@@ -98,6 +98,32 @@ document.addEventListener("DOMContentLoaded", () => {
         currentStep = 0;
         showStep();
     })
+
+    // Skip tutorial
+
+    skipTutorialBtn.addEventListener("click", () => {
+        tutorialBox.classList.add("hidden");
+        alert("Tutorial skipped!");
+    })
+
+    // Show a specific step
+
+    function showStep() {
+        if (currentStep >= steps.length) {
+            completeTutorial();
+            return;
+        }
+
+        const step = steps[currentStep];
+        tutorialText.textContent = step.text;
+        tutorialBox.classList.remove("hidden");
+
+        // Position the tutorial box 
+
+        if (step.target) {
+            const targetElement = document.querySelector(step.target);
+        }
+    }
   })
 
 
