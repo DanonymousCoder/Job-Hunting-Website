@@ -59,13 +59,34 @@ document.addEventListener("DOMContentLoaded", () => {
             return new Promise((resolve) => {
                 const onScroll = () => {
                     if (window.scrollY > window.innerHeight / 2) {
-                        
+                        window.removeEventListener("scroll", onScroll);
+                        resolve();
                     }
+                };
+                window.addEventListener("scroll", onScroll);
+            });
+        },
+      },
+      {
+        text: "Click the button to enable dark mode.",
+        target : "#darkmode-btn",
+        action : () => {
+            return new Promise((resolve) => {
+                const button = document.querySelector("#darkmode-btn");
+
+                const onClick = () => {
+                    button.removeEventListener("click", onClick);
+                    resolve();
                 }
-            })
-        }
-      }
-    ]
+                button.addEventListener("click", onclick);
+            });
+        },
+      },
+    ];
+
+
+    let currentStep = 0;
+    const tutorialBox = document.getElementById("tutorial-box")
   })
 
 
