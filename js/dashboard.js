@@ -265,7 +265,3 @@ tutorialBox.classList.remove("hidden");
 const step = steps[currentStep];
 tutorialText.textContent = step.text;
 tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden")
