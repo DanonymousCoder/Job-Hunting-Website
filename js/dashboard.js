@@ -53,6 +53,7 @@ app.addEventListener("click", () => {
   messagesTab.classList.remove("active2");
   dashTab.classList.remove("active2");
   appTab.classList.add("active2");
+  findTab.classList.remove("active2");
   browseTab.classList.remove("active2")
 })
 
