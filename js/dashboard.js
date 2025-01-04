@@ -193,8 +193,3 @@ sptBt.addEventListener("click", () => {
   sptBt.src = "../assets/images/View-active.png";
   deftBt.src = "../assets/images/View2-non.png";
 })
-
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
