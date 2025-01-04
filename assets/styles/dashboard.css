@@ -1161,6 +1161,10 @@ main.messages {
    padding: 10px 30px;
 }
 
+.application {
+   overflow-x: hidden;
+}
+
 .application .new-feat {
    background-color: #F6F6FD;
    display: flex;
