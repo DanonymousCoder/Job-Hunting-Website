@@ -11,7 +11,7 @@ let app = document.getElementById("applications");
 let appTab = document.getElementById("app-tab");
 let find = document.getElementById("find");
 let findTab = document.getElementById("find-tab");
-const browseTab = document.getElementById("brows-tab");
+let browseTab = document.getElementById("brows-tab");
 
 let cont = document.getElementById("container");
 let darkTog = document.getElementById("dark-mode");
@@ -192,74 +192,6 @@ sptBt.addEventListener("click", () => {
   sptBt.src = "../assets/images/View-active.png";
   deftBt.src = "../assets/images/View2-non.png";
 })
-
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden"); const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
-
-const step = steps[currentStep];
-tutorialText.textContent = step.text;
-tutorialBox.classList.remove("hidden");
 
 
 const step = steps[currentStep];
