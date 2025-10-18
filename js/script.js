@@ -19,7 +19,7 @@ ham.addEventListener("click", navOpen);
 
 function darkInit() {
     cont.classList.toggle("dark");
-    
+
 
     // Toggle the icon between moon and sun
     if (lightTog.classList.contains("bx-moon")) {
@@ -37,11 +37,11 @@ function navOpen() {
 }
 
 function signUp() {
-    window.location.href = "/Job-Hunting-Website/pages/signup.html";
+    window.location.href = "pages/signup.html";
 }
 
 function logIn() {
-    window.location.href = "/Job-Hunting-Website/pages/login.html";
+    window.location.href = "/pages/login.html";
 }
 
 
@@ -52,36 +52,36 @@ function logIn() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const steps = [
-      {
-        text : "Scroll down to view the whole landing page.",
-        target : null,
-        action : () => {
-            return new Promise((resolve) => {
-                const onScroll = () => {
-                    if (window.scrollY > window.innerHeight / 2) {
-                        window.removeEventListener("scroll", onScroll);
+        {
+            text: "Scroll down to view the whole landing page.",
+            target: null,
+            action: () => {
+                return new Promise((resolve) => {
+                    const onScroll = () => {
+                        if (window.scrollY > window.innerHeight / 2) {
+                            window.removeEventListener("scroll", onScroll);
+                            resolve();
+                        }
+                    };
+                    window.addEventListener("scroll", onScroll);
+                });
+            },
+        },
+        {
+            text: "Click the button to enable dark mode.",
+            target: "#darkmode-btn",
+            action: () => {
+                return new Promise((resolve) => {
+                    const button = document.querySelector("#darkmode-btn");
+
+                    const onClick = () => {
+                        button.removeEventListener("click", onClick);
                         resolve();
                     }
-                };
-                window.addEventListener("scroll", onScroll);
-            });
+                    button.addEventListener("click", onclick);
+                });
+            },
         },
-      },
-      {
-        text: "Click the button to enable dark mode.",
-        target : "#darkmode-btn",
-        action : () => {
-            return new Promise((resolve) => {
-                const button = document.querySelector("#darkmode-btn");
-
-                const onClick = () => {
-                    button.removeEventListener("click", onClick);
-                    resolve();
-                }
-                button.addEventListener("click", onclick);
-            });
-        },
-      },
     ];
 
 
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetElement = document.querySelector(step.target);
         }
     }
-  })
+})
 
 
 
@@ -134,4 +134,4 @@ function goHome() {
     window.location.href = "../index.html";
     /Job-Hunting-Website
 }
-    */   
+    */
