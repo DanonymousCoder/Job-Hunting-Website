@@ -2850,3 +2850,111 @@ p.des-f {
 .container.dark nav .bottom p#fulname {
    color: #FFFFFF;
 }
+
+
+@media (max-width: 1000px) {
+   .container p {
+      font-size: .7rem;
+   }
+
+   .interviewed {
+      padding: 1em .5em;
+   }
+
+   .tot-jobs {
+      padding: 1em;
+   }
+
+   .hd {
+      font-size: 1rem;
+   }
+
+   .num {
+      font-size: 3.75rem;
+   }
+
+   .col2 {
+      max-height: 310px;
+      padding: 1em;
+   }
+
+   .col2 .md {
+      gap: 0;
+   }
+
+   .lf img {
+      height: 100px;
+   }
+
+   .rb1 img {
+      height: 10px;
+   }
+
+   .rb1 p {
+      font-size: 0.5rem;
+   }
+
+   .rb1 .bold {
+      font-size: 1rem;
+   }
+
+   .col3 {
+      width: 40%;
+   }
+
+   .row .main {
+      max-width: 320px;
+   }
+
+   .main .location p:last-of-type {
+      overflow-x: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 100%;
+   }
+
+
+   /*Jobs Panel*/
+
+
+   .find .search .key {
+      gap: 2em;
+      padding: 0;
+      border: none;
+   }
+
+   .find .key input,
+   .find .location select {
+      width: 200px
+   }
+
+   .find .key input::placeholder,
+   .custom-select {
+      font-size: .8rem;
+   }
+
+   .find button {
+      font-size: .5em;
+      font-weight: 700;
+   }
+
+   .apply {
+      padding: 1em;
+   }
+
+   .apply .comp-info {
+      gap: .5em;
+   }
+
+   .label .mobile-hide {
+      display: none;
+   }
+
+   .bottom {
+      margin-bottom: 5em;
+   }
+
+   #maail {
+      display: none;
+   }
+}
