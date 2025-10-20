@@ -127,6 +127,12 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.head > p').forEach(function (p) {
+        p.classList.add('head-p');
+    });
+});
+
 
 
 /*

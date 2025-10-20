@@ -1367,10 +1367,21 @@ a {
     padding: 0;
     margin: 0;
     grid-area: ff4;
+    max-width: 95%;
   }
 }
 
 @media (max-width: 550px) {
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  .key input,
+  .location select {
+    width: 130px;
+  }
+
   .column-latest .box {
     padding: 1em;
     gap: 1em;
@@ -1382,9 +1393,67 @@ a {
     justify-content: center;
     align-items: center;
   }
+
+  .cta {
+    height: 450px;
+  }
+
+  .cta .left h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta .right {
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .cta .right img {
+    height: 100%;
+  }
+
+  .cta button {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+
+  .notify form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label p {
+    min-width: 100px;
+  }
+
+  .loc {
+    max-width: 230px;
+  }
+
+  .loc p {
+    overflow: hidden;
+    display: block;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 400px) {
+  .head {
+    width: 100%;
+    gap: 1em;
+  }
+
+  .head-p {
+    font-size: 1px;
+    font-weight: 300;
+  }
+
+  .head-p img {
+    display: none;
+  }
+
   .latest {
     width: 100%;
   }
