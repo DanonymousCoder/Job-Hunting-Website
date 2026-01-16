@@ -52,6 +52,31 @@
 
 <body>
 
+    <!-- Coming Soon Modal -->
+    <div class="coming-soon-modal" id="coming-soon-modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class='bx bx-rocket'></i>
+            </div>
+            <h2>Coming Soon!</h2>
+            <p>We're working hard to bring you something amazing. Stay tuned for updates!</p>
+            <div class="modal-features">
+                <div class="feature">
+                    <i class='bx bx-check-circle'></i>
+                    <span>New Features</span>
+                </div>
+                <div class="feature">
+                    <i class='bx bx-check-circle'></i>
+                    <span>Better Experience</span>
+                </div>
+                <div class="feature">
+                    <i class='bx bx-check-circle'></i>
+                    <span>More Opportunities</span>
+                </div>
+            </div>
+            <button class="modal-close" id="modal-close">Got it!</button>
+        </div>
+    </div>
 
     <!--
         CONTAINER
@@ -77,15 +102,16 @@
                     </div>
 
                     <ul id="link" class="mobile-hide">
-                        <li class="nav-links"><a href="#">Find Jobs</a></li>
-                        <li class="nav-links"><a href="#">Browse Companies</a></li>
+                        <li class="nav-links"><a href="#" class="coming-soon">Find Jobs</a></li>
+                        <li class="nav-links"><a href="#" class="coming-soon">Browse Companies</a></li>
+                        <li class="nav-close desktop-hide"><i id="close-nav" class='bx bx-x'></i></li>
                     </ul>
                 </div>
 
                 <div class="nav-links">
                     <img id="ham" class="desktop-hide" src="./assets/images/hamburger.png" alt="">
 
-                    <div class="btn mobile-hide" id="butn">
+                    <div class="nav-btn mobile-hide" id="butn">
                         <button class="first" id="dark-mode"><i id="icon" class='bx bx-moon'></i></button>
                         <button id="login">Login</button>
                         <button class="have-bg" id="signup">Sign Up</button>
@@ -138,7 +164,7 @@
 
                         </div>
 
-                        <button class="have-bg">Search my job</button>
+                        <button class="have-bg coming-soon">Search my job</button>
                     </div>
 
                     <p>
@@ -184,31 +210,31 @@
                 <div class="head">
                     <h2>Explore by <span>category</span></h2>
 
-                    <p class="head-p">Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
+                    <p class="head-p coming-soon">Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
                 </div>
 
                 <div class="boxes">
 
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/design.png" alt="">
                         <p>Design</p>
                         <p class="sub">235 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/sales.png" alt="">
                         <p>Sales</p>
                         <p class="sub">756 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box hover">
+                    <div class="box hover coming-soon">
                         <img src="./assets/images/market.png" alt="">
                         <p>Marketing</p>
                         <p class="sub">235 jobs available <img src="./assets/images/w-r-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/finance.png" alt="">
                         <p>Finance</p>
                         <p class="sub">325 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
@@ -216,25 +242,25 @@
 
 
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/tech.png" alt="">
                         <p>Technology</p>
                         <p class="sub">436 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/eng.png" alt="">
                         <p>Engineering</p>
                         <p class="sub">542 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/prof.png" alt="">
                         <p>Business</p>
                         <p class="sub">211 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
                     </div>
 
-                    <div class="box">
+                    <div class="box coming-soon">
                         <img src="./assets/images/human.png" alt="">
                         <p>Human Resource</p>
                         <p class="sub">345 jobs available <img src="./assets/images/right-arr.png" alt=""></p>
@@ -252,7 +278,7 @@
                 <div class="left">
                     <h2>Start posting <br>jobs today</h2>
                     <p>Start posting jobs for only $0.</p>
-                    <button>Sign Up For Free</button>
+                    <button class="coming-soon">Sign Up For Free</button>
                 </div>
                 <div class="right">
                     <img src="./assets/images/Dashboard Company.png" alt="">
@@ -269,7 +295,7 @@
                 <div class="head">
                     <h2>Featured <span>jobs</span></h2>
 
-                    <p>Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
+                    <p class="coming-soon">Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
                 </div>
 
                 <div class="boxes">
@@ -529,7 +555,7 @@
                 <div class="head">
                     <h2>Latest <span>jobs open</span></h2>
 
-                    <p>Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
+                    <p class="coming-soon">Show all jobs <img src="./assets/images/right-arr.png" alt=""></p>
                 </div>
 
                 <div class="column-latest">
@@ -748,22 +774,22 @@
                         <div class="about abt2">
                             <ul>
                                 <li><a href="#" class="main">About</a></li>
-                                <li><a href="#">Companies</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Advice</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#" class="coming-soon">Companies</a></li>
+                                <li><a href="#" class="coming-soon">Pricing</a></li>
+                                <li><a href="#" class="coming-soon">Terms</a></li>
+                                <li><a href="#" class="coming-soon">Advice</a></li>
+                                <li><a href="#" class="coming-soon">Privacy Policy</a></li>
                             </ul>
                         </div>
 
                         <div class="about abt3">
                             <ul>
                                 <li><a href="#" class="main">Resources</a></li>
-                                <li><a href="#">Help Docs</a></li>
-                                <li><a href="#">Guide</a></li>
-                                <li><a href="#">Updates</a></li>
-                                <li><a href="">Advice</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#" class="coming-soon">Help Docs</a></li>
+                                <li><a href="#" class="coming-soon">Guide</a></li>
+                                <li><a href="#" class="coming-soon">Updates</a></li>
+                                <li><a href="#" class="coming-soon">Advice</a></li>
+                                <li><a href="#" class="coming-soon">Contact Us</a></li>
                             </ul>
                         </div>
 
@@ -776,7 +802,7 @@
 
                             <form action="#">
                                 <input type="email" name="mail" id="mail" placeholder="Email Address">
-                                <button>Subscribe</button>
+                                <button type="button" class="coming-soon">Subscribe</button>
                             </form>
                         </div>
 
@@ -786,11 +812,11 @@
                         <p class="right">2024 @ JobHuntly. All rights reserved.</p>
 
                         <div class="socials">
-                            <a href="#"><img src="./assets/images/Facebook.png" alt=""></a>
-                            <a href="#"><img src="./assets/images/Instagram.png" alt=""></a>
-                            <a href="#"><img src="./assets/images/Dribbble.png" alt=""></a>
-                            <a href="#"><img src="./assets/images/LinkedIn.png" alt=""></a>
-                            <a href="#"><img src="./assets/images/Twitter2.png" alt=""></a>
+                            <a href="#" class="coming-soon"><img src="./assets/images/Facebook.png" alt=""></a>
+                            <a href="#" class="coming-soon"><img src="./assets/images/Instagram.png" alt=""></a>
+                            <a href="#" class="coming-soon"><img src="./assets/images/Dribbble.png" alt=""></a>
+                            <a href="#" class="coming-soon"><img src="./assets/images/LinkedIn.png" alt=""></a>
+                            <a href="#" class="coming-soon"><img src="./assets/images/Twitter2.png" alt=""></a>
                         </div>
                     </div>
 

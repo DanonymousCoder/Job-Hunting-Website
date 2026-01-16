@@ -2958,3 +2958,228 @@ p.des-f {
       display: none;
    }
 }
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+   nav {
+      width: 60px;
+      overflow: hidden;
+   }
+   
+   nav:hover {
+      width: 250px;
+      transition: width 0.3s ease;
+   }
+   
+   nav .logo p,
+   nav .links p,
+   nav .setts p,
+   nav .setts h5,
+   nav .bottom .txt {
+      display: none;
+   }
+   
+   nav:hover .logo p,
+   nav:hover .links p,
+   nav:hover .setts p,
+   nav:hover .setts h5,
+   nav:hover .bottom .txt {
+      display: block;
+   }
+   
+   .content {
+      width: calc(100% - 60px);
+      margin-left: 60px;
+   }
+   
+   nav .logo {
+      padding-left: 15px;
+   }
+   
+   nav .dash,
+   nav .app,
+   nav .find,
+   nav .browse,
+   nav .pub {
+      padding-left: 15px;
+   }
+   
+   nav .mess {
+      padding-left: 15px;
+   }
+   
+   main .head {
+      flex-direction: column;
+      gap: 1em;
+   }
+   
+   main .right {
+      flex-wrap: wrap;
+   }
+   
+   .greet {
+      flex-direction: column;
+      gap: 1em;
+      align-items: flex-start;
+   }
+   
+   .row {
+      flex-direction: column;
+   }
+   
+   .col1, .col2, .col3 {
+      width: 100% !important;
+      max-width: 100% !important;
+   }
+   
+   .browse-comp .bottom {
+      grid-template-columns: 1fr;
+   }
+   
+   .find .search {
+      flex-direction: column;
+      gap: 1em;
+   }
+   
+   .find .key {
+      flex-direction: column;
+      width: 100%;
+   }
+   
+   .find .key input,
+   .find .location select {
+      width: 100%;
+   }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 576px) {
+   nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      flex-direction: row;
+      justify-content: space-around;
+      z-index: 1000;
+      padding: 0;
+   }
+   
+   nav .top {
+      flex-direction: row;
+      width: 100%;
+      gap: 0;
+   }
+   
+   nav .top .links {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0;
+      border: none;
+      gap: 0;
+   }
+   
+   nav .logo,
+   nav .setts,
+   nav .bottom,
+   nav .links p,
+   nav .mess img {
+      display: none;
+   }
+   
+   nav .dash,
+   nav .app,
+   nav .find,
+   nav .browse,
+   nav .pub,
+   nav .mess {
+      padding: 10px;
+      justify-content: center;
+   }
+   
+   nav .mess .tog {
+      gap: 0;
+   }
+   
+   nav .top i {
+      font-size: 20px;
+   }
+   
+   .active {
+      padding: 10px;
+      border-radius: 10px;
+   }
+   
+   .content {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 70px;
+   }
+   
+   main h3 {
+      font-size: 24px;
+   }
+   
+   main .right a {
+      padding: 8px 16px;
+      font-size: 12px;
+   }
+   
+   .greet h4 {
+      font-size: 18px;
+   }
+   
+   .greet .text p {
+      font-size: 14px;
+   }
+   
+   .date {
+      padding: 8px 12px;
+   }
+   
+   .row {
+      padding: 0 10px;
+   }
+   
+   .tot-jobs,
+   .interviewed {
+      padding: 1em;
+   }
+   
+   .num {
+      font-size: 2.5rem;
+   }
+   
+   .hd {
+      font-size: 0.9rem;
+   }
+   
+   .apply {
+      padding: 1em;
+   }
+   
+   .apply .btm {
+      flex-direction: column;
+      gap: 1em;
+   }
+   
+   .aside-browse {
+      display: none;
+   }
+   
+   .browse-comp {
+      width: 100%;
+   }
+   
+   .browse-comp .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+   }
+   
+   .browse-comp .top .heads h3 {
+      font-size: 24px;
+   }
+}

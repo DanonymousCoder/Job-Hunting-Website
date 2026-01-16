@@ -4,6 +4,131 @@
 
 @import url(../ClashDisplay_Complete/Fonts/WEB/css/clash-display.css);
 
+/* Coming Soon Modal */
+.coming-soon-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.coming-soon-modal.show {
+    display: flex;
+}
+
+.coming-soon-modal .modal-content {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8F8FD 100%);
+    padding: 3em 2.5em;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 25px 50px rgba(70, 64, 222, 0.25);
+    animation: slideUp 0.4s ease;
+}
+
+.coming-soon-modal .modal-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4640DE 0%, #26A4FF 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.5em;
+    animation: bounce 2s infinite;
+}
+
+.coming-soon-modal .modal-icon i {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.coming-soon-modal h2 {
+    font-family: "ClashDisplay-Semibold", sans-serif;
+    font-size: 32px;
+    color: #25324B;
+    margin-bottom: 0.5em;
+}
+
+.coming-soon-modal > .modal-content > p {
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    color: #515B6F;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.coming-soon-modal .modal-features {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.coming-soon-modal .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.coming-soon-modal .feature i {
+    color: #56CDAD;
+    font-size: 18px;
+}
+
+.coming-soon-modal .feature span {
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    color: #515B6F;
+}
+
+.coming-soon-modal .modal-close {
+    background: linear-gradient(135deg, #4640DE 0%, #26A4FF 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coming-soon-modal .modal-close:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(70, 64, 222, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.coming-soon {
+    cursor: pointer;
+}
+
 * {
     padding: 0;
     margin: 0;
