@@ -12,12 +12,25 @@ let login = document.getElementById("login");
 
 
 
-signup.addEventListener("click", signUp);
-login.addEventListener("click", logIn);
+if (signup) {
+    signup.addEventListener("click", signUp);
+}
 
-darkTog.addEventListener("click", darkInit);
-ham.addEventListener("click", navOpen);
-closeNav.addEventListener("click", navClose);
+if (login) {
+    login.addEventListener("click", logIn);
+}
+
+if (darkTog && cont) {
+    darkTog.addEventListener("click", darkInit);
+}
+
+if (ham) {
+    ham.addEventListener("click", navOpen);
+}
+
+if (closeNav) {
+    closeNav.addEventListener("click", navClose);
+}
 
 // Check if container is at max-width (1440px)
 function isContainerAtMaxWidth() {
@@ -27,7 +40,7 @@ function isContainerAtMaxWidth() {
 
 // Update body dark mode based on container width
 function updateBodyDarkMode() {
-    if (cont.classList.contains("dark") && isContainerAtMaxWidth()) {
+    if (cont && cont.classList.contains("dark") && isContainerAtMaxWidth()) {
         document.body.classList.add("dark-mode");
     } else {
         document.body.classList.remove("dark-mode");
@@ -38,6 +51,10 @@ function updateBodyDarkMode() {
 window.addEventListener("resize", updateBodyDarkMode);
 
 function darkInit() {
+    if (!cont || !lightTog) {
+        return;
+    }
+
     cont.classList.toggle("dark");
     
     // Update body dark mode when container reaches max-width
@@ -54,11 +71,19 @@ function darkInit() {
 }
 
 function navOpen() {
+    if (!link || !btn) {
+        return;
+    }
+
     link.classList.toggle("active");
     btn.classList.toggle("active");
 }
 
 function navClose() {
+    if (!link || !btn) {
+        return;
+    }
+
     link.classList.remove("active");
     btn.classList.remove("active");
 }
@@ -68,7 +93,7 @@ function signUp() {
 }
 
 function logIn() {
-    window.location.href = "/pages/login.html";
+    window.location.href = "pages/login.html";
 }
 
 
@@ -85,26 +110,32 @@ const comingSoonElements = document.querySelectorAll(".coming-soon");
 comingSoonElements.forEach(element => {
     element.addEventListener("click", (e) => {
         e.preventDefault();
-        comingSoonModal.classList.add("active");
+        if (comingSoonModal) {
+            comingSoonModal.classList.add("active", "show");
+        }
     });
 });
 
 // Close modal when clicking close button
-modalCloseBtn.addEventListener("click", () => {
-    comingSoonModal.classList.remove("active");
-});
+if (modalCloseBtn && comingSoonModal) {
+    modalCloseBtn.addEventListener("click", () => {
+        comingSoonModal.classList.remove("active", "show");
+    });
+}
 
 // Close modal when clicking outside
-comingSoonModal.addEventListener("click", (e) => {
-    if (e.target === comingSoonModal) {
-        comingSoonModal.classList.remove("active");
-    }
-});
+if (comingSoonModal) {
+    comingSoonModal.addEventListener("click", (e) => {
+        if (e.target === comingSoonModal) {
+            comingSoonModal.classList.remove("active", "show");
+        }
+    });
+}
 
 // Close modal with Escape key
 document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && comingSoonModal.classList.contains("active")) {
-        comingSoonModal.classList.remove("active");
+    if (comingSoonModal && e.key === "Escape" && (comingSoonModal.classList.contains("active") || comingSoonModal.classList.contains("show"))) {
+        comingSoonModal.classList.remove("active", "show");
     }
 });
 
@@ -137,11 +168,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 return new Promise((resolve) => {
                     const button = document.querySelector("#darkmode-btn");
 
+                    if (!button) {
+                        resolve();
+                        return;
+                    }
+
                     const onClick = () => {
                         button.removeEventListener("click", onClick);
                         resolve();
                     }
-                    button.addEventListener("click", onclick);
+                    button.addEventListener("click", onClick);
                 });
             },
         },
@@ -153,6 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const tutorialText = document.getElementById("tutorial-text");
     const skipTutorialBtn = document.getElementById("skip-tutorial-btn");
     const startTutorialBtn = document.getElementById("start-tutorial-btn");
+
+    if (!tutorialBox || !tutorialText || !skipTutorialBtn || !startTutorialBtn) {
+        return;
+    }
 
 
     // Start the tutorial

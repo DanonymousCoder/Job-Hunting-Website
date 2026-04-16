@@ -342,6 +342,18 @@ form button {
     border: none;
 }
 
+.auth-feedback {
+    min-height: 20px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4640DE;
+}
+
+.auth-feedback.error {
+    color: #C03545;
+}
+
 .alt {
     width: 60%;
     display: flex;

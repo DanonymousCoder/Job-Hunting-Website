@@ -74,7 +74,7 @@
                 <p>Company</p>
             </div>
 
-            <h3>Welcome Back, Dude</h3>
+            <h3 id="welcome-heading">Welcome Back</h3>
 
             <div class="google coming-soon">
                 <img src="../assets/images/google.png" alt="">
@@ -85,16 +85,16 @@
                 <p>Or login with email</p>
             </div>
 
-            <form action="#">
+            <form action="#" id="login-form">
 
                 <div class="email">
                     <label for="mail">Email Address</label>
-                    <input type="email" name="" id="" placeholder="Enter your email Address" required>
+                    <input type="email" name="email" id="mail" placeholder="Enter your email Address" required>
                 </div>
 
                 <div class="pswrd">
                     <label for="pswrd">Password</label>
-                    <input type="password" name="" id="" placeholder="Enter your password" required>
+                    <input type="password" name="password" id="pswrd" placeholder="Enter your password" required>
                 </div>
 
                 <div class="check">
@@ -103,6 +103,7 @@
                 </div>
 
                 <button id="submit">Login</button>
+                <p id="login-feedback" class="auth-feedback"></p>
             </form>
 
             <div class="alt">
@@ -119,6 +120,7 @@
     -->
 
     <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
     
 </body>
 </html>

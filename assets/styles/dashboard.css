@@ -201,6 +201,20 @@ nav .bottom {
    padding-left: 20px;
 }
 
+.logout-btn {
+   margin-top: 14px;
+   width: calc(100% - 20px);
+   background-color: #E9EBFD;
+   color: #4640DE;
+   border: 1px solid #CCCCF5;
+   border-radius: 8px;
+   padding: 10px 14px;
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 22.4px;
+}
+
 nav .bottom .prof {
    display: flex;
    gap: .5em;
@@ -1963,6 +1977,24 @@ li {
    line-height: 22.4px;
    text-align: center;
    color: #7C8493;
+}
+
+.job-action-feedback {
+   min-height: 22px;
+   width: 90%;
+   margin-top: 8px;
+   padding: 10px 14px;
+   background-color: #F8F8FD;
+   border: 1px solid #D6DDEB;
+   border-radius: 8px;
+   font-family: "Epilogue", sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   color: #4640DE;
+}
+
+.job-action-feedback.error {
+   color: #C03545;
 }
 
 .outputs .spt {

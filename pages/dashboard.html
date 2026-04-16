@@ -101,6 +101,7 @@
                         <p id="maail">gmail</p>
                     </div>
                 </div>
+                <button id="logout-btn" class="logout-btn">Log out</button>
             </div>
         </nav>
 
@@ -879,7 +880,7 @@
 
                         <div class="key">
                             <i class='bx bx-search sch'></i>
-                            <input type="text" placeholder="Job title or keyword">
+                            <input type="text" id="find-job-keyword" placeholder="Job title or keyword">
                         </div>
 
                         <div class="location">
@@ -899,7 +900,7 @@
 
                         </div>
 
-                        <button class="have-bg">Search my job</button>
+                        <button class="have-bg" id="find-job-search-btn">Search my job</button>
                     </div>
 
                     <p>
@@ -1042,7 +1043,7 @@
                             <div class="tp">
                                 <div class="left">
                                     <h4>All Jobs</h4>
-                                    <p>Showing 73 results</p>
+                                    <p id="find-results-count">Showing 73 results</p>
                                 </div>
                                 <div class="right">
                                     <div class="sort">
