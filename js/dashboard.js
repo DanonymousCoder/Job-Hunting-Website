@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         searchInput: document.getElementById("find-job-keyword"),
         searchButton: document.getElementById("find-job-search-btn"),
         resultsCount: document.getElementById("find-results-count"),
+        messageInput: document.getElementById("msg-box"),
+        sendMessageBtn: document.querySelector(".message-box .rit img"),
+        chatWrapper: document.querySelector(".msg-txt .wrapper"),
+        chatThread: document.querySelector(".msg-txt"),
+        elonPreviewText: document.querySelector(".people .person.first-p .bottom p"),
+        elonPreviewTime: document.querySelector(".people .person.first-p .top > p"),
         sptBt: document.getElementById("spt-bt"),
         deftBt: document.getElementById("dft-bt"),
         spt: document.getElementById("spt"),
@@ -61,6 +67,118 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "../pages/login.html";
         });
     }
+
+    const chatStorageKey = `elonChatMessages_${currentUser.email}`;
+
+    function loadChatMessages() {
+        return JSON.parse(localStorage.getItem(chatStorageKey) || "[]");
+    }
+
+    function persistChatMessages(messages) {
+        localStorage.setItem(chatStorageKey, JSON.stringify(messages));
+    }
+
+    function formatTime(date) {
+        return date.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit"
+        });
+    }
+
+    function createUserMessageNode(text, timeLabel) {
+        const msgRow = document.createElement("div");
+        msgRow.className = "jan user";
+
+        const avatar = document.createElement("img");
+        avatar.src = "../assets/images/Avatar.png";
+        avatar.alt = "";
+
+        const texts = document.createElement("div");
+        texts.className = "texts";
+
+        const sender = document.createElement("p");
+        sender.className = "bold";
+        sender.textContent = "You";
+
+        const bubbleWrap = document.createElement("div");
+        bubbleWrap.className = "double";
+        const bubble = document.createElement("p");
+        bubble.textContent = text;
+        bubbleWrap.appendChild(bubble);
+
+        const time = document.createElement("p");
+        time.className = "time";
+        time.textContent = timeLabel;
+
+        texts.appendChild(sender);
+        texts.appendChild(bubbleWrap);
+        texts.appendChild(time);
+
+        msgRow.appendChild(avatar);
+        msgRow.appendChild(texts);
+        return msgRow;
+    }
+
+    function updateElonPreview(text, timeLabel) {
+        if (elements.elonPreviewText) {
+            const shortText = text.length > 35 ? `${text.slice(0, 35)}...` : text;
+            elements.elonPreviewText.textContent = shortText;
+        }
+
+        if (elements.elonPreviewTime) {
+            elements.elonPreviewTime.textContent = timeLabel;
+        }
+    }
+
+    function appendChatMessage(text, createdAt, shouldPersist) {
+        if (!elements.chatWrapper) {
+            return;
+        }
+
+        const timeLabel = formatTime(new Date(createdAt));
+        const node = createUserMessageNode(text, timeLabel);
+        elements.chatWrapper.appendChild(node);
+        updateElonPreview(text, timeLabel);
+
+        if (elements.chatThread) {
+            elements.chatThread.scrollTop = elements.chatThread.scrollHeight;
+        }
+
+        if (shouldPersist) {
+            const messages = loadChatMessages();
+            messages.push({ text, createdAt });
+            persistChatMessages(messages);
+        }
+    }
+
+    function sendMessage() {
+        const text = (elements.messageInput?.value || "").trim();
+        if (!text) {
+            return;
+        }
+
+        appendChatMessage(text, new Date().toISOString(), true);
+        elements.messageInput.value = "";
+        elements.messageInput.focus();
+    }
+
+    if (elements.sendMessageBtn) {
+        elements.sendMessageBtn.style.cursor = "pointer";
+        elements.sendMessageBtn.addEventListener("click", sendMessage);
+    }
+
+    if (elements.messageInput) {
+        elements.messageInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+
+    loadChatMessages().forEach((message) => {
+        appendChatMessage(message.text, message.createdAt, false);
+    });
 
     const stats = loadJobStats();
     const jobCards = Array.from(document.querySelectorAll(".find .apply, .find .box, .app-details .card .right a, .job .right a, .buttons a"));
